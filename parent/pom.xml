@@ -43,7 +43,7 @@
         <version.plexus-utils>3.3.0</version.plexus-utils>
         <version.plexus-velocity>1.2</version.plexus-velocity>
         <version.maven-core>3.0.4</version.maven-core>
-        <version.maven-archiver>2.4</version.maven-archiver>
+        <version.maven-archiver>3.3.0</version.maven-archiver>
         <version.maven-file-management>1.2.1</version.maven-file-management>
 
         <!-- Test dependencies -->
