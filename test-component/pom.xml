@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
         <artifactId>parent</artifactId>
-        <version>4.5.1-SNAPSHOT</version>
+        <version>4.6.0.ayg</version>
         <relativePath>../parent</relativePath>
     </parent>
 
@@ -36,6 +36,13 @@
 
     <build>
         <plugins>
+        <plugin>
+		     <groupId>org.apache.maven.plugins</groupId>
+		     <artifactId>maven-deploy-plugin</artifactId>
+		     <configuration>
+		       <skip>true</skip>
+		     </configuration>
+		   </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <executions>

@@ -2,15 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-parent</artifactId>
-        <version>11</version>
-    </parent>
+
 
     <groupId>org.richfaces.cdk</groupId>
     <artifactId>aggregator</artifactId>
-    <version>4.5.1-SNAPSHOT</version>
+    <version>4.6.0.ayg</version>
     <packaging>pom</packaging>
     <name>RichFaces CDK Aggregator</name>
 
@@ -20,8 +16,8 @@
 
         <!-- maven-compiler-plugin -->
         <!-- Overide jboss-parent default version-->
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <modules>
@@ -36,13 +32,26 @@
         <module>test-component</module>
         <module>dist</module>
     </modules>
+    <url>https://github.com/albfernandez/richfaces-cdk</url>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, Version 2.1</name>
+            <distribution>repo</distribution>
+            <url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+        </license>
+    </licenses>
     <!-- SCM and distribution management -->
     <scm>
         <connection>scm:git:git://github.com/richfaces/cdk.git</connection>
         <developerConnection>scm:git:git@github.com:richfaces/cdk.git</developerConnection>
         <url>https://github.com/richfaces/cdk</url>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
   </scm>
+      <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/albfernandez/richfaces-cdk/issues</url>
+    </issueManagement>
+
 
     <!-- Minimal build configuration -->
     <build>
@@ -57,42 +66,14 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <inherited>false</inherited>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
-                <configuration>
-                    <keyname>${gpg.keyname}</keyname>
-                    <passphraseServerId>${gpg.keyname}</passphraseServerId>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.8</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			   </plugin>
+
+
         </plugins>
     </build>
 

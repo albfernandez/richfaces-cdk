@@ -4,7 +4,7 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
-        <version>4.5.1-SNAPSHOT</version>
+        <version>4.6.0.ayg</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
     <artifactId>annotations</artifactId>
