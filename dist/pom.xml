@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.richfaces.cdk</groupId>
+        <groupId>com.github.albfernandez.richfaces.cdk</groupId>
         <artifactId>parent</artifactId>
         <version>4.5.1-SNAPSHOT</version>
         <relativePath>../parent</relativePath>

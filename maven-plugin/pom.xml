@@ -4,7 +4,7 @@
 
     <parent>
         <artifactId>parent</artifactId>
-        <groupId>org.richfaces.cdk</groupId>
+        <groupId>com.github.albfernandez.richfaces.cdk</groupId>
         <version>4.5.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
@@ -58,7 +58,7 @@
             <artifactId>plexus-velocity</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.richfaces.cdk</groupId>
+            <groupId>com.github.albfernandez.richfaces.cdk</groupId>
             <artifactId>generator</artifactId>
             <version>${project.version}</version>
             <exclusions>
