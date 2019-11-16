@@ -22,7 +22,7 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
-        <version>4.6.0.ayg</version>
+        <version>4.6.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
