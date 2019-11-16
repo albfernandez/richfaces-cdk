@@ -9,7 +9,7 @@
         <relativePath>../parent</relativePath>
     </parent>
 
-    <groupId>org.richfaces.cdk.test</groupId>
+    <groupId>com.github.albfernandez.richfaces.cdk.test</groupId>
     <artifactId>cdk-test-component</artifactId>
     <name>RichFaces CDK - Test Component</name>
 

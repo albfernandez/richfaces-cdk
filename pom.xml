@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
 
 
-    <groupId>org.richfaces.cdk</groupId>
-    <artifactId>aggregator</artifactId>
-    <version>4.6.0.ayg</version>
-    <packaging>pom</packaging>
-    <name>RichFaces CDK Aggregator</name>
+	<groupId>com.github.albfernandez.richfaces.cdk</groupId>
+	<artifactId>aggregator</artifactId>
+	<version>4.6.0.ayg</version>
+	<packaging>pom</packaging>
+	<name>RichFaces CDK Aggregator</name>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- maven-compiler-plugin -->
-        <!-- Overide jboss-parent default version-->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+		<!-- maven-compiler-plugin -->
+		<!-- Overide jboss-parent default version -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
-    <modules>
-        <module>parent</module>
-        <module>commons</module>
-        <module>annotations</module>
-        <module>attributes</module>
-        <module>xinclude</module>
-        <module>generator</module>
-        <module>cmdln-generator</module>
-        <module>maven-plugin</module>
-        <module>test-component</module>
-        <module>dist</module>
-    </modules>
-    <description>RichFaces Component Development Kit (CDK)</description>
-    <url>https://github.com/albfernandez/richfaces-cdk</url>
-    <licenses>
-        <license>
-            <name>GNU Lesser General Public License, Version 2.1</name>
-            <distribution>repo</distribution>
-            <url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
-        </license>
-    </licenses>
-    <!-- SCM and distribution management -->
+	<modules>
+		<module>parent</module>
+		<module>commons</module>
+		<module>annotations</module>
+		<module>attributes</module>
+		<module>xinclude</module>
+		<module>generator</module>
+		<module>cmdln-generator</module>
+		<module>maven-plugin</module>
+		<module>test-component</module>
+		<module>dist</module>
+	</modules>
+	<description>RichFaces Component Development Kit (CDK)</description>
+	<url>https://github.com/albfernandez/richfaces-cdk</url>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License, Version 2.1</name>
+			<distribution>repo</distribution>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+		</license>
+	</licenses>
+	<developers>
+        <developer>
+            <name>RichFaces committers</name>
+        </developer>
+    </developers>
+	<!-- SCM and distribution management -->
 	<scm>
 		<connection>scm:git:git://github.com/albfernandez/richfaces-cdk.git</connection>
 		<developerConnection>scm:git:git@github.com:albfernandez/richfaces-cdk.git</developerConnection>
@@ -54,42 +61,78 @@
 	</issueManagement>
 
 
-    <!-- Minimal build configuration -->
-    <build>
-        <finalName>cdk</finalName>
-        
-     
-        <plugins> 
-           <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
-                <configuration>
-                    <keyname>${gpg.keyname}</keyname>
-                    <passphraseServerId>${gpg.keyname}</passphraseServerId>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.8</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	<!-- Minimal build configuration -->
+	<build>
+		<finalName>cdk</finalName>
+
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<aggregate>true</aggregate>
+				</configuration>
+				<executions>
+					<execution>
+						<id>generate-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- JavaDoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<source>7</source>
+					<links>
+						<link>https://docs.oracle.com/javase/7/docs/api/</link>
+					</links>
+				</configuration>
+				<executions>
+					<execution>
+						<id>generate-javadoc</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
+				<configuration>
+					<keyname>${gpg.keyname}</keyname>
+					<passphraseServerId>${gpg.keyname}</passphraseServerId>
+				</configuration>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.8</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
