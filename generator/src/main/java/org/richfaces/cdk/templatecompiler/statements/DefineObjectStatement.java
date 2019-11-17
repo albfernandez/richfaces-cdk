@@ -61,7 +61,7 @@ public class DefineObjectStatement extends FreeMarkerTemplateStatementBase {
      * </p>
      *
      * @param initializationExpression the initializationExpression to set
-     * @throws ParsingException
+     * 
      */
     public void setObject(String name, String type, String initializationExpression, boolean cast) {
         try {

@@ -50,7 +50,7 @@ public class ElementsHandler implements DomHandler<ModelElement, DOMResult> {
 
     /**
      * Default constructor.
-     * <p/>
+     * 
      * It is up to a JAXB provider to decide which DOM implementation to use or how that is configured.
      */
     public ElementsHandler() {

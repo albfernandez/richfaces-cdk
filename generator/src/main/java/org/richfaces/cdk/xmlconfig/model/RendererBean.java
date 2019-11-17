@@ -153,8 +153,8 @@ public class RendererBean extends ElementBeanBase<RendererBean.RendererExtension
         /**
          * <p class="changed_added_4_0">
          * </p>
-         * <p/>
-         * TODO
+         * 
+         * 
          *
          * @return the tag
          */

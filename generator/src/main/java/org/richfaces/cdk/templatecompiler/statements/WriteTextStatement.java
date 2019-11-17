@@ -62,7 +62,7 @@ public class WriteTextStatement extends FreeMarkerTemplateStatementBase {
      * </p>
      *
      * @param textExpression the textExpression to set
-     * @throws ParsingException
+     * 
      */
     public void setExpression(String textExpression) {
         try {

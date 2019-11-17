@@ -173,7 +173,7 @@ public class TaglibGeneratorVisitor extends SimpleVisitor<Boolean, ComponentLibr
      *        &lt;/attribute&gt;
      * &lt;/tag&gt;
      *
-     * <pre>
+     * </pre>
      *
      * */
     public Boolean visitValidator(ValidatorModel model, ComponentLibrary componentLibrary) {
