@@ -58,7 +58,7 @@ public class AttributesStatement extends StatementsContainer {
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param attributes
+     * @param element
      * @param componentAttributes
      */
     public void processAttributes(AnyElement element, Collection<PropertyBase> componentAttributes) {

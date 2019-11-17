@@ -70,8 +70,8 @@ public class ComponentBean extends ElementBeanBase<ComponentBean.ComponentExtens
      *
      * @param id the id to set
      */
-    public void setId(FacesId type) {
-        this.id = type;
+    public void setId(FacesId id) {
+        this.id = id;
     }
 
     @Override

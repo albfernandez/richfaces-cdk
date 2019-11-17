@@ -65,7 +65,7 @@ public class RendererClassGenerator implements CdkWriter {
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param library
+     *
      * @param output
      * @param log
      * @param visitorFactory

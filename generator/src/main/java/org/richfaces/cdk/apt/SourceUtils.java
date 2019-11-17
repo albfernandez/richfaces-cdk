@@ -161,7 +161,7 @@ public interface SourceUtils {
      * Get JavaDoc comments associated with given element.
      * </p>
      *
-     * @param componentElement
+     * @param element
      * @return
      */
     String getDocComment(Element element);
@@ -253,7 +253,7 @@ public interface SourceUtils {
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param componentElement
+     * @param element
      * @param name
      * @return
      */

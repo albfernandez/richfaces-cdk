@@ -52,8 +52,8 @@ public class VisitorFactoryImpl implements TemplateVisitorFactory<RendererClassV
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param classLoader
-     * @param jaxbBinding
+     * @param loader
+     * 
      * @param log
      */
     @Inject

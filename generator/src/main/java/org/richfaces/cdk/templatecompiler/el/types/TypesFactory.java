@@ -65,11 +65,11 @@ public interface TypesFactory {
      * <p>
      *
      * <p>
-     * This method is slightly undeterminstic since it loops through methods names and return the first matching method.
+     * This method is slightly indeterministic since it loops through methods names and return the first matching method.
      * </p>
      *
      * <p>
-     * This method is used by {@link #invokeMethod(Object object, String methodName, Object [] args, Class[] parameterTypes)}.
+     * This method is used by  #invokeMethod(Object object, String methodName, Object [] args, Class[] parameterTypes).
      *
      * <p>
      * This method can match primitive parameter by passing in wrapper classes. For example, a <code>Boolean</code> will match a
@@ -79,7 +79,7 @@ public interface TypesFactory {
      * @param methodName find method with this name
      * @param parameterTypes find method with compatible parameters
      * @return The accessible method
-     * @throws ParsingException if error occured.
+     * @throws ParsingException if error occurred.
      */
     ELType getMatchingVisibleMethodReturnType(ELType elType, final String methodName, ELType... parameterTypes)
             throws ParsingException;
@@ -87,10 +87,10 @@ public interface TypesFactory {
     /**
      * This method return PropertyDescriptor by specified propertyName and clazz.
      *
-     * @param elType - class to search
-     * @param propertyName - propertyName to search
+     * @param type - class to search
+     * @param name - propertyName to search
      * @return property descriptor if found.
-     * @throws ParsingException if error occured.
+     * @throws ParsingException if error occurred.
      */
     ELPropertyDescriptor getPropertyDescriptor(ELType type, String name) throws ParsingException;
 }

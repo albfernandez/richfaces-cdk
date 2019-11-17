@@ -41,9 +41,9 @@ public interface ITreeNode {
      * Visit current node. Generate Java code, that represent current node.
      *
      * @param visitor - ELVisitor
-     * @param stringBuilder instance to collect information.
+     * @param sb instance to collect information.
      *
-     * @return instance of org.jboss.el.parser.Node
+     * 
      * @throws ParsingException - if error occurred during parsing process.
      */
     void visit(StringBuilder sb, ELVisitor visitor) throws ParsingException;

@@ -2,7 +2,7 @@
  * <h2>JAXB classes that wraps real model classes.</h2>
  * <p>Some model requirements do not match JAXB plain bean model. The most important case is requirements for unique
  * Id's like component and renderer type. the other important difference is model properties which do not map to
- * faces-config schema but moved into &lt;<....-extension&gt; elements.</p>
+ * faces-config schema but moved into &lt;....-extension&gt; elements.</p>
  *
  */
 @XmlAccessorType(XmlAccessType.NONE)

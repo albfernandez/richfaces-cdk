@@ -130,7 +130,7 @@ public class EventModel implements ModelElement<EventModel>, ViewElement {
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param listenerMethod the listenerMethod to set
+     * @param listenerMethodName the listenerMethod to set
      */
     public void setListenerMethod(String listenerMethodName) {
         this.listenerMethod = listenerMethodName;

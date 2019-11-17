@@ -59,8 +59,8 @@ public class BehaviorRendererBean {
      *
      * @param id the id to set
      */
-    public void setId(FacesId type) {
-        this.id = type;
+    public void setId(FacesId id) {
+        this.id = id;
     }
 
     /**
@@ -79,7 +79,7 @@ public class BehaviorRendererBean {
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param targetClass the targetClass to set
+     * @param rendererClass the targetClass to set
      */
     public void setTargetClass(ClassName rendererClass) {
         this.targetClass = rendererClass;

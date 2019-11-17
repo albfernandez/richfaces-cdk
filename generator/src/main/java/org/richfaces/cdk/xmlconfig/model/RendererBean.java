@@ -65,8 +65,8 @@ public class RendererBean extends ElementBeanBase<RendererBean.RendererExtension
      *
      * @param id the id to set
      */
-    public void setId(String type) {
-        this.id = type;
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**

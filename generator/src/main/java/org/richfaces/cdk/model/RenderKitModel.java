@@ -76,7 +76,7 @@ public class RenderKitModel extends DescriptionGroupBase implements ModelElement
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param targetClass the targetClass to set
+     * @param renderKitClass the targetClass to set
      */
     public void setTargetClass(ClassName renderKitClass) {
         this.targetClass = renderKitClass;

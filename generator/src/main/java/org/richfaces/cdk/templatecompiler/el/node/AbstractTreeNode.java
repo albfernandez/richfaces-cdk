@@ -42,7 +42,7 @@ public abstract class AbstractTreeNode implements ITreeNode {
      * Collects output from visiting child of the current node with the specified index and returns collected string.
      *
      * @param childIndex
-     * @param context
+     * 
      * @param visitor
      * @return
      * @throws ParsingException
@@ -72,9 +72,9 @@ public abstract class AbstractTreeNode implements ITreeNode {
     /**
      * Visit current node. Generate Java code, that represent current node.
      *
-     * @param stringBuilder instance to collect information.
-     * @param context - context to resolve beans
+     * @param index - index of child.
      * @param visitor - ELVisitor
+     * 
      *
      * @throws ParsingException - if error occurred during parsing process.
      * @return instance of org.jboss.el.parser.Node
@@ -102,12 +102,12 @@ public abstract class AbstractTreeNode implements ITreeNode {
     }
 
     /**
-     * Return child of wrapped node by specified index. Abstract operation to override in subclasses.
+     * Visit current node.
      *
-     * @param index - index of child.
-     *
+     * @param sb instance to collect information.
+     * @param visitor - ELVisitor
      * @throws ParsingException - if error occurred(child not found).
-     * @return wrapper for child
+     * 
      *
      */
     public abstract void visit(StringBuilder sb, ELVisitor visitor) throws ParsingException;

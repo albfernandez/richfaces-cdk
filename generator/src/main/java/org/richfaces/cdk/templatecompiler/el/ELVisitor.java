@@ -168,8 +168,8 @@ public final class ELVisitor implements TypedTemplateStatement {
      * Parse specified EL expression and return Java code, that represent this expression
      *
      * @param expression - expression to resolve
-     * @param contextMap - Map<String, Class<?>> - context for search classes.
-     * @return generated Java code.
+     * @param contextVariables - Map&lt;String, Class&lt;?&gt;&gt; - context for search classes.
+     *
      * @throws ParsingException - if error occurred during parsing.
      */
     public void parse(String expression, Variables contextVariables, ELType expectedType) throws ParsingException {

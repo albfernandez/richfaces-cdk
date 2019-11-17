@@ -31,6 +31,7 @@ import java.lang.annotation.Target;
 import javax.faces.component.behavior.ClientBehavior;
 import javax.faces.el.MethodBinding;
 
+
 /**
  * <p class="changed_added_4_0">
  * Used to define Java class field or bean property getter method as JSF attribute. It used on the abstract method, all
@@ -129,7 +130,7 @@ public @interface Attribute {
 
     /**
      * <p class="changed_added_4_0">
-     * Method signature for attributes with EL method reference type, either {@link javax.faces.elMethodBinding} or {@link javax.el.MethodExpression}.
+     * Method signature for attributes with EL method reference type, either {@link javax.faces.el.MethodBinding} or javax.el.MethodExpression.
      * </p>
      *
      * @return

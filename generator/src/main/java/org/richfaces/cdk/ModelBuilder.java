@@ -24,7 +24,7 @@ package org.richfaces.cdk;
 
 /**
  * <p class="changed_added_4_0">
- * Interface for {@link org.richfaces.cdk.model.ComponentLibrary.ComponentLibrary} model builder.
+ * Interface for org.richfaces.cdk.model.ComponentLibrary.ComponentLibrary model builder.
  * </p>
  *
  * @author asmirnov@exadel.com

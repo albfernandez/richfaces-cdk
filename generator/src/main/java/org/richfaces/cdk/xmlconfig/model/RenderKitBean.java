@@ -78,7 +78,7 @@ public class RenderKitBean extends ExtensibleBean<RenderKitBean.RenderKitExtensi
      * <p class="changed_added_4_0">
      * </p>
      *
-     * @param targetClass the targetClass to set
+     * @param renderkitClass the targetClass to set
      */
     public void setTargetClass(ClassName renderkitClass) {
         this.targetClass = renderkitClass;

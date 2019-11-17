@@ -574,7 +574,7 @@ public final class TypesFactoryImpl implements TypesFactory {
      * </p>
      *
      * <p>
-     * This method is used by {@link #invokeMethod(Object object, String methodName, Object [] args, Class[] parameterTypes)}.
+     * This method is used by #invokeMethod(Object object, String methodName, Object [] args, Class[] parameterTypes).
      *
      * <p>
      * This method can match primitive parameter by passing in wrapper classes. For example, a <code>Boolean</code> will match a

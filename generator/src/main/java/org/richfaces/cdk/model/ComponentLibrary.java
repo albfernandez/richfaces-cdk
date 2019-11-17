@@ -379,7 +379,7 @@ public class ComponentLibrary implements Serializable, Extensible<ConfigExtensio
      * Check that library is empty
      * </p>
      *
-     * @param this
+     * 
      * @return
      */
     public boolean isEmpty() {

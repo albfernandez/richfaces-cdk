@@ -40,7 +40,7 @@ public interface AttributesProcessor {
      * </p>
      *
      * @param attributesConfig relative URL to the fragment file.
-     * @return properties defined by that fragment.
+     * 
      */
     void processXmlFragment(BeanModelBase component, String... attributesConfig);
 
@@ -48,11 +48,11 @@ public interface AttributesProcessor {
      * <p class="changed_added_4_0">
      * Process all bean properties associated with type element. Recursively visit all supertypes and interfaces. For each type,
      * tries to read xml fragment with same name as class or interface with ".xml" suffix, then collect all bean properties
-     * marked by the {@link Attribute} annotation
+     * marked by the Attribute annotation
      * </p>
      *
      * @param element
-     * @return
+     * 
      */
     void processType(BeanModelBase component, TypeElement element);
 }

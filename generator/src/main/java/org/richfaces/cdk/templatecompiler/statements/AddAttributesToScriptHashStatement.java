@@ -101,7 +101,7 @@ public class AddAttributesToScriptHashStatement extends FreeMarkerTemplateStatem
 
     /**
      * @param attributeNames
-     * @param attributes
+     * @param componentAttributes
      */
     public void setAttributes(Collection<String> attributeNames, Collection<PropertyBase> componentAttributes) {
         this.componentAttributes = componentAttributes;

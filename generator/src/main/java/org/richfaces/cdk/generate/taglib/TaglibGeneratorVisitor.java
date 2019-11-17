@@ -162,7 +162,7 @@ public class TaglibGeneratorVisitor extends SimpleVisitor<Boolean, ComponentLibr
      *
      * <pre>
      *     &lt;tag&gt;
-     *        &lt;tag-name>formatValidator&lt;/tag-name&gt;
+     *        &lt;tag-name&gt;formatValidator&lt;/tag-name&gt;
      *        &lt;validator&gt;
      *            &lt;validator-id&gt;&lt;/validator-id&gt;
      *            &lt;handler-class&gt;&lt;/handler-class&gt;

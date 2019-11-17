@@ -30,7 +30,7 @@ import org.richfaces.cdk.model.InvalidNameException;
 /**
  * <p class="changed_added_4_0">
  * That interface defines methods that calculates names according to <a href="http://www.jboss.org/community/docs/DOC-13693">CDK
- * naming conventions</>
+ * naming conventions</a>
  * </p>
  *
  * @author asmirnov@exadel.com

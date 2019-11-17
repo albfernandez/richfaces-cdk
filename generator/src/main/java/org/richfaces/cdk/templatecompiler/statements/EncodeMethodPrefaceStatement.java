@@ -34,7 +34,7 @@ public class EncodeMethodPrefaceStatement extends FreeMarkerTemplateStatementBas
     private boolean renderResponseWriter = true;
 
     /**
-     * @param templateName
+     * @param renderer
      */
     @Inject
     public EncodeMethodPrefaceStatement(@TemplateModel FreeMarkerRenderer renderer) {

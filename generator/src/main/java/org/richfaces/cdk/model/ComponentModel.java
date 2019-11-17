@@ -114,7 +114,7 @@ public final class ComponentModel extends ModelElementBase implements ModelEleme
     /**
      * <p class="changed_added_4_0">
      * Reepresent a component family. In the faces-config element that property encoded as
-     * <component><component-extension><cdk:component-family>....
+     * &lt;component&gt;&lt;component-extension&gt;&lt;cdk:component-family&gt;....
      * </p>
      *
      * @return the family

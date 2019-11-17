@@ -340,8 +340,12 @@
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.0.1</version>
 					<configuration>
-						<source>7</source>
+						<source>8</source>
 						<additionalparam>${javadoc.opts}</additionalparam>
+						<links>
+							<link>https://docs.oracle.com/javase/8/docs/api/</link>
+							<link>https://docs.oracle.com/javaee/7/api/</link>
+						</links>
 					</configuration>
 					<executions>
 						<execution>
@@ -458,8 +462,12 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.0.1</version>
 				<configuration>
-					<source>7</source>
+					<source>8</source>
 					<additionalparam>${javadoc.opts}</additionalparam>
+					<links>
+						<link>https://docs.oracle.com/javase/8/docs/api/</link>
+						<link>https://docs.oracle.com/javaee/7/api/</link>
+					</links>
 				</configuration>
 				<executions>
 					<execution>

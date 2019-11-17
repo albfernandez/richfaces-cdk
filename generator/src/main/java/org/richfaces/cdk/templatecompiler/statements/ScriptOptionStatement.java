@@ -74,7 +74,7 @@ public class ScriptOptionStatement extends FreeMarkerTemplateStatementBase {
     }
 
     /**
-     * @param value the value to set
+     * @param valueExpression the value to set
      */
     public void setValueExpression(String valueExpression) {
         try {

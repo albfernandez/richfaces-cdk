@@ -65,7 +65,7 @@ public class ClassImport implements Serializable {
     }
 
     /**
-     * @param static_ the static_ to set
+     * @param staticImport the static to set
      */
     public void setStatic(boolean staticImport) {
         this.staticImport = staticImport;

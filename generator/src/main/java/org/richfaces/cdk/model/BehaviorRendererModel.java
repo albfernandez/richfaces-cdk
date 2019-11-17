@@ -55,8 +55,8 @@ public class BehaviorRendererModel extends DescriptionGroupBase implements Model
      *
      * @param id the id to set
      */
-    public void setId(FacesId type) {
-        this.id = type;
+    public void setId(FacesId id) {
+        this.id = id;
     }
 
     /**
@@ -86,8 +86,8 @@ public class BehaviorRendererModel extends DescriptionGroupBase implements Model
      *
      * @param targetClass the targetClass to set
      */
-    public void setTargetClass(ClassName rendererClass) {
-        this.targetClass = rendererClass;
+    public void setTargetClass(ClassName targetClass) {
+        this.targetClass = targetClass;
     }
 
     /**

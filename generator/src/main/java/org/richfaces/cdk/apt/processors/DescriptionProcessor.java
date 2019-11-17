@@ -28,7 +28,7 @@ import org.richfaces.cdk.model.DescriptionGroup;
 
 /**
  * <p class="changed_added_4_0">
- * Implementation of that interface process {@link Description} annotation and set information from it into model.
+ * Implementation of that interface process Description annotation and set information from it into model.
  * </p>
  *
  * @author asmirnov@exadel.com
@@ -37,8 +37,8 @@ import org.richfaces.cdk.model.DescriptionGroup;
 public interface DescriptionProcessor {
     /**
      * <p class="changed_added_4_0">
-     * process {@link Description} annotation and set information from it into model. Optional string from the JavaDoc comment
-     * has precedence over {@link Desription#overwrite()} attribute.
+     * process Description annotation and set information from it into model. Optional string from the JavaDoc comment
+     * has precedence over Desription#overwrite() attribute.
      * </p>
      *
      * @param model
@@ -49,7 +49,7 @@ public interface DescriptionProcessor {
 
     /**
      * <p class="changed_added_4_0">
-     * process {@link Description} annotation and set information from it into model.
+     * process Description annotation and set information from it into model.
      * </p>
      *
      * @param model

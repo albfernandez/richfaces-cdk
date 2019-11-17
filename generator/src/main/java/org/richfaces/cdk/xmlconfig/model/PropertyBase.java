@@ -336,7 +336,7 @@ public class PropertyBase extends ExtensibleBean<PropertyBase.PropertyExtension>
          * <p class="changed_added_4_0">
          * </p>
          *
-         * @param aliasFor the aliasFor to set
+         * @param aliases the aliasFor to set
          */
         public void setAliasFor(String aliases) {
             this.aliasFor = aliases;
