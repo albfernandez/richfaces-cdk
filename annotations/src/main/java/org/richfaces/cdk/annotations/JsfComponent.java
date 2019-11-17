@@ -117,7 +117,7 @@ public @interface JsfComponent {
     /**
      * <p class="changed_added_4_0">
      *
-     * @{link FacesEvent}s fired by the component.
+     * {@link FacesEvent}s fired by the component.
      *        </p>
      *
      * @return
@@ -159,7 +159,7 @@ public @interface JsfComponent {
      * <p class="changed_added_4_0">
      * Defines third-level renderer specific components. Used to generate a whole family of similar components. For example,
      * {@link javax.faces.component.UIComponentBase} provides {@link javax.faces.component.UICommand} subclass for all command
-     * components, and {@link javax.faces.component.html.HtmlCommandLink} with {@link javax.faces.component.HtmlCommandButton}
+     * components, and {@link javax.faces.component.html.HtmlCommandLink} with {@link javax.faces.component.html.HtmlCommandButton}
      * are renderer-specific components for links and buttons.
      * </p>
      *

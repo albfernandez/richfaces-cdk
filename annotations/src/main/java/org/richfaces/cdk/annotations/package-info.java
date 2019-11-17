@@ -13,11 +13,12 @@
  * <li>&#064;{@link org.richfaces.cdk.annotations.Event} Defines JSF {@link javax.faces.event.FacesEvent} or links event with component that fires it.</li>
  * </ul>
  * <h2>Annotations used to refine class top level definitions</h2>
+ * <ul>
  * <li>&#064;{@link org.richfaces.cdk.annotations.Test} tells CDK to generate unit test for component.</li>
  * <li>&#064;{@link org.richfaces.cdk.annotations.Description} optional IDE-related parameters.</li>
  * <li>&#064;{@link org.richfaces.cdk.annotations.Tag} VDL tag description.</li>
  * <li>&#064;{@link org.richfaces.cdk.annotations.RendererSpecificComponent} defines renderer specific component for the family created from one base component</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.Description} optional IDE-related parameters.<br /></li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.Description} optional IDE-related parameters.</li>
  * </ul>
  * <p> </p>
  * <h2>Attribute level annotations ( for getter or field level ):</h2>

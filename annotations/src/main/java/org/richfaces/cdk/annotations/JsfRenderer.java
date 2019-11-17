@@ -31,7 +31,7 @@ import javax.faces.render.RenderKitFactory;
 
 /**
  * <p class="changed_added_4_0">
- * This annotation defines concrete class as JSF {@link Renderer}, or abstract class as the base for generated Renderer
+ * This annotation defines concrete class as JSF javax.faces.render.Renderer, or abstract class as the base for generated Renderer
  * implementation.
  * </p>
  *

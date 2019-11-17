@@ -54,10 +54,10 @@ public @interface JsfBehavior {
 
     /**
      * <p class="changed_added_4_0">
-     * fully qualified class name of the generated Behavior implementation. Default value means nothing to genrate from concrete
+     * fully qualified class name of the generated Behavior implementation. Default value means nothing to generate from concrete
      * class, or infer name by convention for abstract class.
      * </p>
-     * </p>
+     * 
      *
      * @return
      */

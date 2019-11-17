@@ -34,13 +34,13 @@ import javax.faces.event.FacesListener;
 
 /**
  * <p class="changed_added_4_0">
- * This annotation tells CDK to generate event-related classes:
+ * This annotation tells CDK to generate event-related classes: </p>
  * <ul>
  * <li>Event listener interface</li>
  * <li>Event source interface</li>
  * <li>Listener tag handler and wrapper to bind listener to the EL-expression.</li>
  * </ul>
- * </p>
+ * 
  *
  * @author asmirnov@exadel.com
  */

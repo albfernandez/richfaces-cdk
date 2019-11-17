@@ -129,7 +129,7 @@ public @interface Attribute {
 
     /**
      * <p class="changed_added_4_0">
-     * Method signature for attributes with EL method reference type, either {@link MethodBinding} or {@link MethodExpression}.
+     * Method signature for attributes with EL method reference type, either {@link javax.faces.elMethodBinding} or {@link javax.el.MethodExpression}.
      * </p>
      *
      * @return

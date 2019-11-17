@@ -71,7 +71,7 @@ public @interface Tag {
     /**
      * <p class="changed_added_4_5">
      * Tag handler class. Fully qualified class name of the generated or existing tag handler. For {@link TagType#Jsp} it's
-     * {@link JspTag} or, more likely, {@link UIComponentTagBase} instance. For facelets, it's {@link TagHandler} instance.
+     * {@link javax.servlet.jsp.tagext.JspTag} or, more likely, {@link javax.faces.webapp.UIComponentTagBase} instance. For facelets, it's {@link javax.faces.view.facelets.TagHandler} instance.
      * </p>
      *
      * @return

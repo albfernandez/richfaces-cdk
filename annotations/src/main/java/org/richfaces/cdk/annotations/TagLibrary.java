@@ -84,7 +84,7 @@ public @interface TagLibrary {
 
     /**
      * <p class="changed_added_4_0">
-     * Servlet ... listener used by JSP library. TODO - ? extends {@link EventListener} ?
+     * Servlet ... listener used by JSP library. TODO - ? extends  EventListener ?
      * </p>
      *
      * @return
