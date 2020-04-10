@@ -113,7 +113,9 @@ public class TaskFactoryImpl implements CompilationTaskFactory {
 
             if (sourceObjects.iterator().hasNext()) {
                 if (log.isDebugEnabled()) {
-                    compilerOptions.add("-verbose -deprecation -Xlint:all");
+                    compilerOptions.add("-verbose");
+                    compilerOptions.add("-deprecation");
+                    compilerOptions.add("-Xlint:all");
                 }
 
                 CompilationTask task = getJavaCompiler().getTask(null, getFileManager(),
