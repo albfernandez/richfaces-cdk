@@ -8,7 +8,7 @@
 
 	<groupId>com.github.albfernandez.richfaces.cdk</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.6.1-SNAPSHOT</version>
+	<version>4.6.1.ayg</version>
 	<packaging>pom</packaging>
 	<name>RichFaces CDK Parent</name>
 	<description>RichFaces Component Development Kit (CDK)</description>
@@ -53,7 +53,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<version.cdk>4.6.1-SNAPSHOT</version.cdk>
+		<version.cdk>4.6.1.ayg</version.cdk>
 		<version.jboss-javaee>3.0.2.Final</version.jboss-javaee>
 
 		<!-- Compile deps -->
