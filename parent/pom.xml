@@ -59,7 +59,7 @@
 		<!-- Compile deps -->
 		<!-- <version.freemarker>2.3.9</version.freemarker> -->
 		<!-- <version.freemarker>2.3.29</version.freemarker> -->
-		<version.freemarker>2.3.10</version.freemarker>
+		<version.freemarker>2.3.30</version.freemarker>
 		<version.jaxb.impl>2.3.2</version.jaxb.impl>
 		<version.jaxb.api>2.3.1</version.jaxb.api>
 		<version.xerces>2.12.1</version.xerces>
