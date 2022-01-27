@@ -62,7 +62,7 @@
 		<version.freemarker>2.3.10</version.freemarker>
 		<version.jaxb.impl>2.3.2</version.jaxb.impl>
 		<version.jaxb.api>2.3.1</version.jaxb.api>
-		<version.xerces>2.12.1</version.xerces>
+		<version.xerces>2.12.2</version.xerces>
 		<version.dom4j>2.1.3</version.dom4j>
 		<version.saxon>8.7</version.saxon>
 		<version.jboss-el>1.1.0</version.jboss-el>
