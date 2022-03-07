@@ -50,7 +50,7 @@ public @interface Attribute {
      * Restricts attribute to literal values only ( no EL expressions ).
      * </p>
      *
-     * @return
+     * @return true to disable el expressions
      */
     boolean literal() default false;
 
@@ -59,7 +59,7 @@ public @interface Attribute {
      * Tells CDK to not include attribute in the VDL tag.
      * </p>
      *
-     * @return
+     * @return true to not include attribute in the VDL tag
      */
     boolean hidden() default false;
 
@@ -68,7 +68,7 @@ public @interface Attribute {
      * Marks attribute as read-only ( no setter method ).
      * </p>
      *
-     * @return
+     * @return true if read-only
      */
     boolean readOnly() default false;
 
@@ -79,7 +79,7 @@ public @interface Attribute {
      * If true, attribute used as pass through html attribue, eg. rendered directly into html without any transformations.
      * </p>
      *
-     * @return
+     * @return true if pass-throug
      */
     boolean passThrough() default false;
 
@@ -88,7 +88,7 @@ public @interface Attribute {
      * Marks attribute as required. Generated tag handler should check its presence.
      * </p>
      *
-     * @return
+     * @return true if required
      */
     boolean required() default false;
 
@@ -97,7 +97,7 @@ public @interface Attribute {
      * Tells CDK to generate getter and setter for attribute.
      * </p>
      *
-     * @return
+     * @return true to Tells CDK to generate getter and setter for attribute.
      */
     boolean generate() default true;
 
@@ -106,7 +106,7 @@ public @interface Attribute {
      * Attribute default value. Should be valid Java code that can be used in field initialiser of function call.
      * </p>
      *
-     * @return
+     * @return default value
      */
     String defaultValue() default "";
 
@@ -115,7 +115,7 @@ public @interface Attribute {
      * Used by IDE to suggest attribute value.
      * </p>
      *
-     * @return
+     * @return suggested value
      */
     String suggestedValue() default "";
 
@@ -124,7 +124,7 @@ public @interface Attribute {
      * Attribute description to include in generated faces-config.xml and taglibs.
      * </p>
      *
-     * @return
+     * @return description
      */
     Description description() default @Description();
 
@@ -133,7 +133,7 @@ public @interface Attribute {
      * Method signature for attributes with EL method reference type, either {@link javax.faces.el.MethodBinding} or javax.el.MethodExpression.
      * </p>
      *
-     * @return
+     * @return signature
      */
     Signature signature() default @Signature(returnType = Signature.NONE.class);
 
@@ -142,7 +142,7 @@ public @interface Attribute {
      * Event descriptions for {@link ClientBehavior} binding.
      * </p>
      *
-     * @return
+     * @return events
      */
     EventName[] events() default {};
 
@@ -151,7 +151,7 @@ public @interface Attribute {
      * Attribute aliases.
      * </p>
      *
-     * @return
+     * @return aliases
      */
     Alias[] aliases() default {};
 }

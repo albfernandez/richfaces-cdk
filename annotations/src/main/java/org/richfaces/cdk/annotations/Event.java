@@ -55,7 +55,7 @@ public @interface Event {
      * Used in the {@link JsfComponent} only, to define event type.
      * </p>
      *
-     * @return
+     * @return value
      */
     Class<? extends FacesEvent> value() default DEFAULT.class;
 
@@ -73,7 +73,7 @@ public @interface Event {
      * Name for the listener interface method that process annotated event type.
      * </p>
      *
-     * @return
+     * @return listenerMethod
      */
     String listenerMethod() default "";
 
@@ -91,10 +91,14 @@ public @interface Event {
      * View Description Language, JSP or Facelets, tags for event listeners, eg &lt;foo:barListener&gt;.
      * </p>
      *
-     * @return
+     * @return tag
      */
     Tag[] tag() default {};
 
+    /**
+     * default facesEvent 
+     *
+     */
     @SuppressWarnings("serial")
     static final class DEFAULT extends FacesEvent {
         public DEFAULT(UIComponent component) {
@@ -111,6 +115,10 @@ public @interface Event {
         }
     }
 
+    /**
+     * default FacesListener 
+     *
+     */
     static final class DEFAULT_LISTENER implements FacesListener {
     }
 }

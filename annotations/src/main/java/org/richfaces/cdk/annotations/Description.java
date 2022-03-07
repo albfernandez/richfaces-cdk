@@ -37,7 +37,7 @@ public @interface Description {
      * Long description of the object. If omited, javadoc comment for associated Java element.
      * </p>
      *
-     * @return
+     * @return Long description of the object
      */
     String value() default "";
 
@@ -46,7 +46,7 @@ public @interface Description {
      * Display name for development tools.
      * </p>
      *
-     * @return
+     * @return Display name
      */
     String displayName() default "";
 
@@ -55,7 +55,7 @@ public @interface Description {
      * URL that defines small IDE icon.
      * </p>
      *
-     * @return Description url.
+     * @return URL that defines small IDE icon.
      */
     String smallIcon() default "";
 
@@ -64,7 +64,7 @@ public @interface Description {
      * URL that defines large IDE icon.
      * </p>
      *
-     * @return
+     * @return URL that defines large IDE icon.
      */
     String largeIcon() default "";
 }

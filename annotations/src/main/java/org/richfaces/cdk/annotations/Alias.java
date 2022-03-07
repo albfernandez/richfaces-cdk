@@ -35,6 +35,9 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Retention(RetentionPolicy.CLASS)
 public @interface Alias {
+	/**
+	 * Name
+	 */
     String NAME = "org.richfaces.cdk.annotations.Alias";
 
     /**
