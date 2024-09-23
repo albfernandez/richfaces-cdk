@@ -102,7 +102,22 @@
                 </directory>
             </resource>
         </resources>
-        <pluginManagement>
+
+    </build>
+    
+    <profiles>
+      
+        
+        <profile>
+	        <id>only-eclipse</id>
+			<activation>
+			  <property>
+			    <name>m2e.version</name>
+			  </property>
+			</activation>
+			<build>
+			
+			        <pluginManagement>
             <plugins>
                 <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
                 <plugin>
@@ -131,7 +146,11 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-    </build>
+		
+			</build>
+		</profile>
+		
+    </profiles>
 
     <dependencies>
         <!-- Java EE -->
@@ -143,10 +162,6 @@
         <!-- CDK -->
         <dependency>
             <groupId>com.github.albfernandez.richfaces.cdk</groupId>
-            <artifactId>commons</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.albfernandez.richfaces.cdk</groupId>
             <artifactId>annotations</artifactId>
         </dependency>
         <dependency>
@@ -156,6 +171,10 @@
         <dependency>
             <groupId>com.github.albfernandez.richfaces.cdk</groupId>
             <artifactId>xinclude</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.albfernandez.richfaces.cdk</groupId>
+            <artifactId>commons</artifactId>
         </dependency>
 
         <!-- Compile dependencies -->
@@ -182,6 +201,12 @@
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
+            <exclusions>
+            	<exclusion>
+            		<groupId>xml-apis</groupId>
+            		<artifactId>xml-apis</artifactId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -203,10 +228,12 @@
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-assistedinject</artifactId>
         </dependency>
+        <!--MZ
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-multibindings</artifactId>
         </dependency>
+        -->
 
         <!-- Test dependencies -->
         <dependency>
@@ -215,8 +242,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>xmlunit</groupId>
-            <artifactId>xmlunit</artifactId>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-legacy</artifactId>
         </dependency>
         <dependency>
             <groupId>org.easymock</groupId>

@@ -38,8 +38,8 @@
             <artifactId>junit</artifactId>
         </dependency>
         <dependency>
-            <groupId>xmlunit</groupId>
-            <artifactId>xmlunit</artifactId>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-legacy</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.albfernandez.richfaces.cdk</groupId>
@@ -96,7 +96,35 @@
 
         </plugins>
 
-        <pluginManagement>
+        
+    </build>
+    <profiles>
+        <profile>
+            <id>java9+</id>
+            <activation>
+                <jdk>[9,)</jdk>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>javax.xml.bind</groupId>
+                    <artifactId>jaxb-api</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.sun.xml.bind</groupId>
+                    <artifactId>jaxb-impl</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+        
+        <profile>
+	        <id>only-eclipse</id>
+			<activation>
+			  <property>
+			    <name>m2e.version</name>
+			  </property>
+			</activation>
+			<build>
+				<pluginManagement>
             <plugins>
                 <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
                 
@@ -128,23 +156,9 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-    </build>
-    <profiles>
-        <profile>
-            <id>java9+</id>
-            <activation>
-                <jdk>[9,)</jdk>
-            </activation>
-            <dependencies>
-                <dependency>
-                    <groupId>javax.xml.bind</groupId>
-                    <artifactId>jaxb-api</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.sun.xml.bind</groupId>
-                    <artifactId>jaxb-impl</artifactId>
-                </dependency>
-            </dependencies>
-        </profile>
+	
+			</build>
+		</profile>
+        
     </profiles>
 </project>

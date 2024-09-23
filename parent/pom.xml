@@ -49,11 +49,11 @@
 	</distributionManagement>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>21</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<version.cdk>4.6.1.ayg</version.cdk>
+		<version.cdk>4.6.2-SNAPSHOT</version.cdk>
 		<version.jboss-javaee>3.0.2.Final</version.jboss-javaee>
 
 		<!-- Compile deps -->
@@ -68,11 +68,11 @@
 		<version.jboss-el>1.1.0</version.jboss-el>
 		<version.xsom>20140925</version.xsom>
 		<version.google-functional-collections>1.1.7</version.google-functional-collections>
-		<version.guice>4.2.2</version.guice>
+		<version.guice>7.0.0</version.guice>
 		<version.sisu>4.2.0</version.sisu>
 		<version.sonatype-sisu>4.2.0</version.sonatype-sisu>
 		<version.javaparser>3.15.3</version.javaparser>
-		<version.guava>32.0.1-jre</version.guava>
+		<version.guava>33.3.0-jre</version.guava>
 		<version.jcommander>1.78</version.jcommander>
 		<version.plexus-utils>3.3.0</version.plexus-utils>
 		<version.plexus-velocity>1.3</version.plexus-velocity>
@@ -83,12 +83,12 @@
 
 		<!-- Test dependencies -->
 		<version.junit>4.13.1</version.junit>
-		<version.xmlunit>1.6</version.xmlunit>
-		<version.easymock>4.0.2</version.easymock>
+		<version.xmlunit-legacy>2.10.0</version.xmlunit-legacy>
+		<version.easymock>5.4.0</version.easymock>
 
 		<!-- Plugin versions -->
-		<version.modello.plugin>1.0.2</version.modello.plugin>
-		<version.guice.plugin>2.24.2</version.guice.plugin>
+		<version.modello.plugin>2.4.0</version.modello.plugin>
+		<version.guice.plugin>2.25.4</version.guice.plugin>
 		<version.gmaven.plugin>1.0</version.gmaven.plugin>
 
 		<!-- maven-compiler-plugin -->
@@ -199,11 +199,13 @@
 				<artifactId>guice-assistedinject</artifactId>
 				<version>${version.guice}</version>
 			</dependency>
+			<!--MZ
 			<dependency>
 				<groupId>com.google.inject.extensions</groupId>
 				<artifactId>guice-multibindings</artifactId>
 				<version>${version.guice}</version>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>com.github.javaparser</groupId>
 				<artifactId>javaparser-core</artifactId>
@@ -283,9 +285,9 @@
 				<version>${version.junit}</version>
 			</dependency>
 			<dependency>
-				<groupId>xmlunit</groupId>
-				<artifactId>xmlunit</artifactId>
-				<version>${version.xmlunit}</version>
+				<groupId>org.xmlunit</groupId>
+				<artifactId>xmlunit-legacy</artifactId>
+				<version>${version.xmlunit-legacy}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.easymock</groupId>
@@ -301,7 +303,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>3.13.0</version>
+					<configuration>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+						<release>${maven.compiler.target}</release>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>com.github.albfernandez.richfaces.cdk</groupId>
@@ -344,15 +351,18 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.10.0</version>
 					<configuration>
-						<source>8</source>
+						<source>21</source>
+						<!--MZ
 						<additionalparam>${javadoc.opts}</additionalparam>
 						<links>
 							<link>https://docs.oracle.com/javase/8/docs/api/</link>
 							<link>https://docs.oracle.com/javaee/7/api/</link>
 						</links>
+						-->
 					</configuration>
+					<!--MZ
 					<executions>
 						<execution>
 							<id>generate-javadoc</id>
@@ -362,10 +372,12 @@
 							</goals>
 						</execution>
 					</executions>
+					-->
 				</plugin>
 				<!-- Packaging -->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.4.2</version>
 					<configuration>
 						<archive>
 							<manifest>
@@ -375,13 +387,16 @@
 							<manifestEntries>
 								<Seam-Version>${project.version}</Seam-Version>
 								<Build-Time>${maven.build.timestamp}</Build-Time>
+								<!--MZ
 								<Automatic-Module-Name>org.jboss.seam.${project.artifactId}</Automatic-Module-Name>
+								-->
 							</manifestEntries>
 						</archive>
 					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
+					<version>3.3.1</version>
 					<configuration>
 						<archive>
 							<manifest>
@@ -408,11 +423,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-gpg-plugin</artifactId>
-					<version>1.6</version>
+					<version>3.2.6</version>
 					<configuration>
 						<keyname>${gpg.keyname}</keyname>
 						<passphraseServerId>${gpg.keyname}</passphraseServerId>
 					</configuration>
+					<!--MZ
 					<executions>
 						<execution>
 							<id>sign-artifacts</id>
@@ -422,17 +438,36 @@
 							</goals>
 						</execution>
 					</executions>
+					-->
 				</plugin>
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.6.8</version>
+					<version>1.7.0</version>
 					<extensions>true</extensions>
 					<configuration>
 						<serverId>ossrh</serverId>
 						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+				    <artifactId>javacc-maven-plugin</artifactId>
+				    <version>3.1.0</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+				    <artifactId>build-helper-maven-plugin</artifactId>
+				    <version>3.6.0</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-checkstyle-plugin</artifactId>
+				    <version>3.5.0</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -466,15 +501,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.0.1</version>
 				<configuration>
-					<source>8</source>
+					<source>21</source>
+					<!--MZ
 					<additionalparam>${javadoc.opts}</additionalparam>
 					<links>
 						<link>https://docs.oracle.com/javase/8/docs/api/</link>
 						<link>https://docs.oracle.com/javaee/7/api/</link>
 					</links>
+					-->
 				</configuration>
+				<!--MZ
 				<executions>
 					<execution>
 						<id>generate-javadoc</id>
@@ -484,15 +521,16 @@
 						</goals>
 					</execution>
 				</executions>
+				-->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.6</version>
 				<configuration>
 					<keyname>${gpg.keyname}</keyname>
 					<passphraseServerId>${gpg.keyname}</passphraseServerId>
 				</configuration>
+				<!--MZ
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -502,11 +540,11 @@
 						</goals>
 					</execution>
 				</executions>
+				-->
 			</plugin>
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.8</version>
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>ossrh</serverId>
