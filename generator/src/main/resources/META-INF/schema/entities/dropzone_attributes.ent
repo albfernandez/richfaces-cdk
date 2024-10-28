@@ -38,7 +38,7 @@
     </property>    
 		<property>
 			<name>dropListener</name>
-			<classname>javax.faces.el.MethodBinding</classname>
+			<classname>jakarta.el.MethodExpression</classname>
 			<description><![CDATA[
 				A listener that processes a drop event
 				]]>

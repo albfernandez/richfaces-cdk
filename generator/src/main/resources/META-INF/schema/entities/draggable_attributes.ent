@@ -38,7 +38,7 @@
 
  		<property elonly="true" attachedstate="true">
 			<name>dragListener</name>
-			<classname>javax.faces.el.MethodBinding</classname>
+			<classname>jakarta.el.MethodExpression</classname>
 			<description>
 				A listener that processes a drag event 
 			</description>

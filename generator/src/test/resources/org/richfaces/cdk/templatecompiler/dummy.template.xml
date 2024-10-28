@@ -20,11 +20,11 @@
         </cc:attribute>
 
         <cc:attribute name="action" method-signature="java.lang.String action( )" />
-        <cc:attribute name="actionListener" method-signature=" void actionListener( javax.faces.event.ActionEvent ) " />
+        <cc:attribute name="actionListener" method-signature=" void actionListener( jakarta.faces.event.ActionEvent ) " />
         <cc:attribute name="coolMethod"
             method-signature=" float coolMethod	(
 			int,	    
-			java.lang.String	 ,	  javax.faces.validator.Validator 	  
+			java.lang.String	 ,	  jakarta.faces.validator.Validator 	  
 		) " />
 
         <cc:attribute name="integerAttribute" type="java.lang.Integer" default="-1" />

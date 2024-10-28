@@ -2,7 +2,7 @@
 
 package ${sourceInterface.package};
 
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 import ${listenerInterface};
 
 /**

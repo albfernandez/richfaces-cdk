@@ -30,7 +30,7 @@ public class CdkClassLoaderTest extends CdkTestBase {
 
     @Test
     public void resourcePath3() throws Exception {
-        File libraryFile = getLibraryFile("javax/faces/component/UIComponent.class");
+        File libraryFile = getLibraryFile("jakarta/faces/component/UIComponent.class");
         assertNotNull(libraryFile);
         assertFalse(libraryFile.isDirectory());
         assertTrue(libraryFile.getName().contains("jsf-api") || libraryFile.getName().contains("myfaces-api"));
@@ -39,11 +39,11 @@ public class CdkClassLoaderTest extends CdkTestBase {
     @Test
     public void testClassLoader() throws Exception {
         Iterable<File> paths = Lists.newArrayList(getLibraryFile("test.source.properties"),
-                getLibraryFile("javax/faces/component/UIComponent.class"));
+                getLibraryFile("jakarta/faces/component/UIComponent.class"));
         CdkClassLoader loader = new CdkClassLoader(paths, null);
-        Class<?> class1 = loader.loadClass("javax.faces.application.Application");
-        assertNotNull(loader.getResource("javax/faces/FacesException.class"));
+        Class<?> class1 = loader.loadClass("jakarta.faces.application.Application");
+        assertNotNull(loader.getResource("jakarta/faces/FacesException.class"));
         assertNotNull(loader.getResource("org/richfaces/cdk/apt/test.html"));
-        assertNull(loader.getResource("javax/el/ELContext.class"));
+        assertNull(loader.getResource("jakarta/el/ELContext.class"));
     }
 }

@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
         <artifactId>parent</artifactId>
-        <version>4.6.2-SNAPSHOT</version>
+        <version>10.0.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.site.plugin>3.8.2</version.site.plugin>
+        <version.site.plugin>3.20.0</version.site.plugin>
 
         <!-- maven-compiler-plugin -->
         <!-- Overide jboss-parent default version-->
@@ -64,7 +64,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
+                <version>3.5.1</version>
                 <configuration>
                     <useManifestOnlyJar>false</useManifestOnlyJar>
                     <useSystemClassLoader>true</useSystemClassLoader>
@@ -154,10 +154,27 @@
 
     <dependencies>
         <!-- Java EE -->
+        <!--
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
             <artifactId>jboss-jsf-api_2.1_spec</artifactId>
         </dependency>
+        -->
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-api</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+        <dependency>
+			<groupId>jakarta.el</groupId>
+			<artifactId>jakarta.el-api</artifactId>
+			<version>6.0.1</version>
+		</dependency>
+		<dependency>
+	    	<groupId>org.glassfish</groupId>
+	    	<artifactId>jakarta.el</artifactId>
+	    	<version>4.0.2</version>
+		</dependency>
 
         <!-- CDK -->
         <dependency>

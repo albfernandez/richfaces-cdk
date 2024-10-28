@@ -1,8 +1,8 @@
 <tag>
-    <tag-name>javax.faces.component.UIOutput</tag-name>
+    <tag-name>jakarta.faces.component.UIOutput</tag-name>
     <validator>
         <validator-id>foo.bar</validator-id>
-        <handler-class>javax.faces.component.UIOutput</handler-class>
+        <handler-class>jakarta.faces.component.UIOutput</handler-class>
     </validator>
 
     <attribute>

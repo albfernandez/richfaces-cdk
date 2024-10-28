@@ -23,7 +23,7 @@
 
 package org.richfaces.cdk.component;
 
-import javax.faces.component.UIPanel;
+import jakarta.faces.component.UIPanel;
 
 /**
  * <p class="changed_added_4_0"></p>

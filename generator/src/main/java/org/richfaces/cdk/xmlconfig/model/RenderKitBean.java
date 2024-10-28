@@ -24,7 +24,7 @@ package org.richfaces.cdk.xmlconfig.model;
 
 import java.util.List;
 
-import javax.faces.render.RenderKitFactory;
+import jakarta.faces.render.RenderKitFactory;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;

@@ -13,7 +13,7 @@
             <description>Panel header content.</description>
         </facet>
         <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-            href="urn:attributes:javax.faces.component.UIPanel.xml" />
+            href="urn:attributes:jakarta.faces.component.UIPanel.xml" />
         <property>
             <property-name>title</property-name>
             <property-class>java.lang.String</property-class>

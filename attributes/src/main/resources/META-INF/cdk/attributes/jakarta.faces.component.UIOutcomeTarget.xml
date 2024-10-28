@@ -18,64 +18,42 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIComponent.xml" />
-
+        href="urn:attributes:jakarta.faces.component.UIOutput.xml" />
     <property>
         <description>
-            Description of the selection item represented by this component.
-            This property may be used by tools.
+            The logical outcome used to resolve a navigation case.
         </description>
-        <display-name>Item Description</display-name>
+        <display-name>Outcome</display-name>
         <icon />
-        <property-name>itemDescription</property-name>
+        <property-name>outcome</property-name>
         <property-class>java.lang.String</property-class>
-    </property>
-
-    <property>
-        <description>
-            Flag indicating that the selection item represented by this component
-            must be rendered as disabled.
-        </description>
-        <display-name>Item Disabled</display-name>
-        <icon />
-        <property-name>itemDisabled</property-name>
-        <property-class>boolean</property-class>
-    </property>
-
-    <property>
-        <description>
-            Label of the selection item represented by this component. This
-            property is displayed to the user when the
-            containing input
-            component is rendered.
-        </description>
-        <display-name>Item Label</display-name>
-        <icon />
-        <property-name>itemLabel</property-name>
-        <property-class>java.lang.String</property-class>
-    </property>
-
-    <property>
-        <description>
-            The value returned to the server when a user chooses the selection
-            item represented by this component.
-        </description>
-        <display-name>Item Value</display-name>
-        <icon />
-        <property-name>itemValue</property-name>
-        <property-class>java.lang.Object</property-class>
-    </property>
-
-    <property>
-        <description>
-            The current value of this component.
-        </description>
-        <display-name>Value</display-name>
-        <icon />
-        <property-name>value</property-name>
-        <property-class>java.lang.Object</property-class>
         <property-extension>
             <cdk:literal>false</cdk:literal>
         </property-extension>
     </property>
+    <property>
+        <description>
+            Whether to include page parameters in the target URI.
+        </description>
+        <display-name>Include Page Parameters</display-name>
+        <icon />
+        <property-name>includeViewParams</property-name>
+        <property-class>java.lang.Boolean</property-class>
+        <property-extension>
+            <cdk:literal>false</cdk:literal>
+        </property-extension>
+    </property>
+    <property>
+        <description>
+            Return the URI fragment, as specified in RFC 2396.
+        </description>
+        <display-name>HTML Fragment</display-name>
+        <icon />
+        <property-name>fragment</property-name>
+        <property-class>java.lang.String</property-class>
+        <property-extension>
+            <cdk:literal>false</cdk:literal>
+        </property-extension>
+    </property>
+
 </cdk:properties>

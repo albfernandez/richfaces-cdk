@@ -30,10 +30,10 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.faces.application.ResourceDependencies;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.context.ResponseWriter;
+import jakarta.faces.application.ResourceDependencies;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.context.ResponseWriter;
 import javax.xml.namespace.QName;
 
 import org.richfaces.cdk.CdkClassLoader;
@@ -214,7 +214,7 @@ public class RendererClassVisitor implements TemplateVisitor {
         // this.generatedClass.addImport(Generated.class);
 
         List<ResourceDependency> resourceDependencies = compositeInterface.getResourceDependencies();
-        ELType dependencyType = typesFactory.getType(javax.faces.application.ResourceDependency.class);
+        ELType dependencyType = typesFactory.getType(jakarta.faces.application.ResourceDependency.class);
         if (1 == resourceDependencies.size()) {
             ResourceDependency resource = resourceDependencies.get(0);
             this.generatedClass.addAnnotation(createResourceAnnotation(dependencyType, resource));
@@ -231,7 +231,7 @@ public class RendererClassVisitor implements TemplateVisitor {
             resources.append("}");
             this.generatedClass.addAnnotation(new JavaAnnotation(typesFactory.getType(ResourceDependencies.class), resources
                     .toString()));
-            this.generatedClass.addImport(javax.faces.application.ResourceDependency.class);
+            this.generatedClass.addImport(jakarta.faces.application.ResourceDependency.class);
         }
         this.createMethodContext();
     }

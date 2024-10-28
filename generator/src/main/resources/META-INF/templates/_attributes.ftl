@@ -23,7 +23,7 @@
         <#include "_attribute_accessors.ftl">
     </#list>
     <#if passThroughCount gt 0 >
-    private static final String ATTRIBUTES_THAT_ARE_SET_KEY = "javax.faces.component.UIComponentBase.attributesThatAreSet";
+    private static final String ATTRIBUTES_THAT_ARE_SET_KEY = "jakarta.faces.component.UIComponentBase.attributesThatAreSet";
     
     private void handleAttribute(String name, Object value) {
         List<String> setAttributes = (List<String>) this.getAttributes().get(ATTRIBUTES_THAT_ARE_SET_KEY);

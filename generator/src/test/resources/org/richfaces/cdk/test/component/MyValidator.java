@@ -23,16 +23,16 @@ package org.richfaces.cdk.test.component;
 
 import org.richfaces.cdk.annotations.JsfValidator;
 
-import javax.faces.validator.ValidatorException;
-import javax.faces.context.FacesContext;
-import javax.faces.component.UIComponent;
+import jakarta.faces.validator.ValidatorException;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.UIComponent;
 
 /**
  * @author akolonitsky
  * @since Jan 14, 2010
  */
 @JsfValidator(id = "my_validator")
-public class MyValidator implements javax.faces.validator.Validator {
+public class MyValidator implements jakarta.faces.validator.Validator {
 
     @Override
     public void validate(FacesContext context, UIComponent component, Object value) throws ValidatorException {
@@ -41,7 +41,7 @@ public class MyValidator implements javax.faces.validator.Validator {
 }
 
 @JsfValidator(id = "my_validator1")
-class MyValidator01 implements javax.faces.validator.Validator {
+class MyValidator01 implements jakarta.faces.validator.Validator {
 
     @Override
     public void validate(FacesContext context, UIComponent component, Object value) throws ValidatorException {

@@ -18,44 +18,20 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIComponent.xml" />
+        href="urn:attributes:jakarta.faces.component.UIComponent.xml" />
+    <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
+        href="urn:attributes:jakarta.faces.component.ActionSource2.xml" />
 
     <property>
         <description>
-            Locale to be used in localizing the rendered output of this view.
+            The current value of this component.
         </description>
-        <display-name>Locale</display-name>
+        <display-name>Value</display-name>
         <icon />
-        <property-name>locale</property-name>
-        <property-class>java.util.Locale</property-class>
+        <property-name>value</property-name>
+        <property-class>java.lang.Object</property-class>
         <property-extension>
-            <cdk:hidden>true</cdk:hidden>
-        </property-extension>
-    </property>
-
-    <property>
-        <description>
-            Identifier of the RenderKit being used to display this view.
-        </description>
-        <display-name>Render Kit Id</display-name>
-        <icon />
-        <property-name>renderKitId</property-name>
-        <property-class>java.lang.String</property-class>
-        <property-extension>
-            <cdk:hidden>true</cdk:hidden>
-        </property-extension>
-    </property>
-
-    <property>
-        <description>
-            Identifier of the view represented by this component tree.
-        </description>
-        <display-name>View Id</display-name>
-        <icon />
-        <property-name>viewId</property-name>
-        <property-class>java.lang.String</property-class>
-        <property-extension>
-            <cdk:hidden>true</cdk:hidden>
+            <cdk:literal>false</cdk:literal>
         </property-extension>
     </property>
 </cdk:properties>

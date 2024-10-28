@@ -10,8 +10,8 @@
             <small-icon>panel.gif</small-icon>
             <large-icon>panel-large.gif</large-icon>
         </icon>
-        <component-type>javax.faces.Panel</component-type>
-        <component-class>javax.faces.component.UIPanel</component-class>
+        <component-type>jakarta.faces.Panel</component-type>
+        <component-class>jakarta.faces.component.UIPanel</component-class>
         <facet>
             <description>Header facet</description>
             <facet-name>header</facet-name>
@@ -40,7 +40,7 @@
             <display-name>Parent Component</display-name>
             <icon />
             <property-name>parent</property-name>
-            <property-class>javax.faces.component.UIComponent</property-class>
+            <property-class>jakarta.faces.component.UIComponent</property-class>
             <property-extension>
                 <tag-attribute>false</tag-attribute>
                 <read-only>true</read-only>
@@ -61,8 +61,8 @@
             </property-extension>
         </property>
         <component-extension>
-            <cdk:component-family>javax.faces.Panel</cdk:component-family>
-            <cdk:base-class>javax.faces.component.UIComponentBase</cdk:base-class>
+            <cdk:component-family>jakarta.faces.Panel</cdk:component-family>
+            <cdk:base-class>jakarta.faces.component.UIComponentBase</cdk:base-class>
             <cdk:generate>true</cdk:generate>
             <cdk:renderer>
                 <cdk:renderer-type>org.richfaces.cdk.TestPanelRenderer</cdk:renderer-type>

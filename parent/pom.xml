@@ -8,7 +8,7 @@
 
 	<groupId>com.github.albfernandez.richfaces.cdk</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.6.2-SNAPSHOT</version>
+	<version>10.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>RichFaces CDK Parent</name>
 	<description>RichFaces Component Development Kit (CDK)</description>
@@ -53,7 +53,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<version.cdk>4.6.2-SNAPSHOT</version.cdk>
+		<version.cdk>10.0.1-SNAPSHOT</version.cdk>
 		<version.jboss-javaee>3.0.2.Final</version.jboss-javaee>
 
 		<!-- Compile deps -->
@@ -99,7 +99,8 @@
 
 	<dependencyManagement>
 		<dependencies>
-
+	
+			<!--MZ
 			<dependency>
 				<groupId>org.jboss.spec</groupId>
 				<artifactId>jboss-javaee-web-6.0</artifactId>
@@ -112,6 +113,27 @@
 						<groupId>xalan</groupId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			-->
+			<dependency>
+	            <groupId>org.apache.myfaces.core</groupId>
+	            <artifactId>myfaces-api</artifactId>
+	            <version>4.0.2</version>
+	        </dependency>
+	        <dependency>
+				<groupId>jakarta.el</groupId>
+				<artifactId>jakarta.el-api</artifactId>
+				<version>6.0.1</version>
+			</dependency>
+			<dependency>
+		    	<groupId>org.glassfish</groupId>
+		    	<artifactId>jakarta.el</artifactId>
+		    	<version>4.0.2</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.annotation</groupId>
+				<artifactId>jakarta.annotation-api</artifactId>
+				<version>3.0.0</version>
 			</dependency>
 
 			<!-- CDK -->
@@ -423,7 +445,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-gpg-plugin</artifactId>
-					<version>3.2.6</version>
+					<version>3.2.7</version>
 					<configuration>
 						<keyname>${gpg.keyname}</keyname>
 						<passphraseServerId>${gpg.keyname}</passphraseServerId>

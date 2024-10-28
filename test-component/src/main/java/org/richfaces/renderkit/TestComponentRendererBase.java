@@ -1,8 +1,8 @@
 package org.richfaces.renderkit;
 
-import javax.faces.application.ResourceDependencies;
-import javax.faces.application.ResourceDependency;
-import javax.faces.render.Renderer;
+import jakarta.faces.application.ResourceDependencies;
+import jakarta.faces.application.ResourceDependency;
+import jakarta.faces.render.Renderer;
 
 @ResourceDependencies({
         @ResourceDependency(library = "org.richfaces", name = "testComponent.js"),

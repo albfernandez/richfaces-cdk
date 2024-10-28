@@ -36,7 +36,7 @@ import org.richfaces.cdk.model.ConverterModel;
  * @author akolonitsky
  * @since Jan 4, 2010
  */
-@SupportedAnnotationTypes({ "javax.faces.component.FacesComponent", JsfConverter.NAME })
+@SupportedAnnotationTypes({ "jakarta.faces.component.FacesComponent", JsfConverter.NAME })
 public class ConverterProcessor extends ProcessorBase implements CdkAnnotationProcessor {
     @Override
     public void process(Element element, ComponentLibrary library) throws CdkProcessingException {

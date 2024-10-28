@@ -27,7 +27,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import javax.faces.convert.Converter;
+import jakarta.faces.convert.Converter;
 
 /**
  * <p class="changed_added_4_0">

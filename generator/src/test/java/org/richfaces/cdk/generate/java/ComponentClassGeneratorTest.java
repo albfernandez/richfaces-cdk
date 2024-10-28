@@ -35,8 +35,7 @@ import java.util.Arrays;
 import java.util.Set;
 
 import javax.el.MethodExpression;
-import javax.faces.component.UIOutput;
-import javax.faces.el.MethodBinding;
+import jakarta.faces.component.UIOutput;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -79,12 +78,14 @@ public class ComponentClassGeneratorTest extends AbstractClassGeneratorTest {
         attribute.setRequired(true);
         attribute.setGenerate(true);
 
+        /*MZ deprecated
         attribute = component.getOrCreateAttribute("testBinding");
         attribute.setType(new ClassName(MethodBinding.class));
         attribute.setGenerate(true);
         attribute.setBinding(true);
         attribute.setBindingAttribute(true);
-
+		*/
+        
         attribute = component.getOrCreateAttribute("testExpr");
         attribute.setType(new ClassName(MethodExpression.class));
         attribute.setGenerate(true);

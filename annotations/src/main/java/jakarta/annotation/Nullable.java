@@ -1,4 +1,4 @@
-package javax.annotation;
+package jakarta.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -19,18 +19,18 @@
     </property>
     <property  attachedstate="true">
         <name>validator</name>
-        <classname>javax.faces.el.MethodBinding</classname>
-        <methodargs>javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object</methodargs>
+        <classname>jakarta.el.MethodExpression</classname>
+        <methodargs>jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object</methodargs>
         <description>
-            MethodBinding pointing at a method that is called during
+            MethodExpression pointing at a method that is called during
             Process Validations phase of the request processing lifecycle,
             to validate the current value of this component
         </description>
     </property>
     <property  attachedstate="true">
         <name>valueChangeListener</name>
-        <classname>javax.faces.el.MethodBinding</classname>
-        <methodargs>javax.faces.event.ValueChangeEvent</methodargs>
+        <classname>jakarta.el.MethodExpression</classname>
+        <methodargs>jakarta.faces.event.ValueChangeEvent</methodargs>
         <description>Listener for value changes</description>
     </property>
 	<property>

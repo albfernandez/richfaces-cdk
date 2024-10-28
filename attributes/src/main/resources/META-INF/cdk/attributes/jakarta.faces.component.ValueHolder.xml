@@ -17,26 +17,51 @@
     -->
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
-    <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.ActionSource.xml" />
     <property>
         <description>
-            MethodExpression representing the application action to invoke
-            when this component is activated by the user.
-            The expression
-            must evaluate to a public method that takes no parameters, and
-            returns an Object (the toString() of
-            which is called to derive
-            the logical outcome) which is passed to the NavigationHandler
-            for this application.
+            Converter instance registered with this component.
         </description>
-        <display-name>Application Action</display-name>
+        <display-name>Converter</display-name>
         <icon />
-        <property-name>actionExpression</property-name>
-        <property-class>javax.el.MethodExpression</property-class>
+        <property-name>converter</property-name>
+        <property-class>jakarta.faces.convert.Converter</property-class>
         <property-extension>
+            <cdk:literal>false</cdk:literal>
+        </property-extension>
+    </property>
+
+    <property>
+        <description>
+            For output components, this is the same as the "value" property.
+            For input components, this is the most
+            recently user-entered
+            value, which will be pushed to the application data model during
+            Update Model Values phase, if a
+            value binding is present for the
+            "value" property.
+        </description>
+        <display-name>Local Value</display-name>
+        <icon />
+        <property-name>localValue</property-name>
+        <property-class>java.lang.Object</property-class>
+        <property-extension>
+            <cdk:literal>true</cdk:literal>
+            <cdk:read-only>true</cdk:read-only>
             <cdk:hidden>true</cdk:hidden>
-            <cdk:signature />
+            <cdk:aliasFor>value</cdk:aliasFor>
+        </property-extension>
+    </property>
+
+    <property>
+        <description>
+            The current value of this component.
+        </description>
+        <display-name>Value</display-name>
+        <icon />
+        <property-name>value</property-name>
+        <property-class>java.lang.Object</property-class>
+        <property-extension>
+            <cdk:literal>false</cdk:literal>
         </property-extension>
     </property>
 </cdk:properties>

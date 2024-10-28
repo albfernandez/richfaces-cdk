@@ -28,7 +28,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import javax.faces.component.UIComponent;
+import jakarta.faces.component.UIComponent;
 
 /**
  * <p class="changed_added_4_0">

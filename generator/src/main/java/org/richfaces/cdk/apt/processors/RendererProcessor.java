@@ -38,7 +38,7 @@ import org.richfaces.cdk.model.RendererModel;
  * @author akolonitsky
  * @since Dec 30, 2009
  */
-@SupportedAnnotationTypes({ "javax.faces.component.FacesComponent", JsfRenderer.NAME })
+@SupportedAnnotationTypes({ "jakarta.faces.component.FacesComponent", JsfRenderer.NAME })
 public class RendererProcessor extends ProcessorBase implements CdkAnnotationProcessor {
     private static final String COMPONENT_FAMILY = "COMPONENT_FAMILY";
     private static final String RENDERER_TYPE = "RENDERER_TYPE";

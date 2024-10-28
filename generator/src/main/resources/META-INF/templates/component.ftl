@@ -2,7 +2,7 @@
 
 package ${targetClass.package};
 
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,12 +10,12 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import javax.faces.context.FacesContext;
-import javax.faces.component.UIComponent;
-import javax.faces.component.behavior.ClientBehaviorHolder;
-import javax.el.MethodExpression;
-import javax.el.ValueExpression;
-import javax.faces.component.StateHelper;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.behavior.ClientBehaviorHolder;
+import jakarta.el.MethodExpression;
+import jakarta.el.ValueExpression;
+import jakarta.faces.component.StateHelper;
 import ${baseClass};
 <#include "_attributes_import.ftl">
 

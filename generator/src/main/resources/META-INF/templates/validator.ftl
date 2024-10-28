@@ -2,13 +2,13 @@
 
 package ${targetClass.package};
 
-import javax.annotation.Generated;
-import javax.faces.component.UIComponent;
-import javax.faces.component.PartialStateHolder;
-import javax.faces.context.FacesContext;
-import javax.faces.validator.Validator;
-import javax.faces.validator.ValidatorException;
-import javax.faces.el.ValueBinding;
+import jakarta.annotation.Generated;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.PartialStateHolder;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.validator.Validator;
+import jakarta.faces.validator.ValidatorException;
+import jakarta.faces.el.ValueBinding;
 <#include "_attributes_import.ftl">
 
 /**

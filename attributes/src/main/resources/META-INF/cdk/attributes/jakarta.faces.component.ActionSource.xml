@@ -31,7 +31,7 @@
         <display-name>Application Action</display-name>
         <icon />
         <property-name>action</property-name>
-        <property-class>javax.faces.el.MethodBinding</property-class>
+        <property-class>jakarta.el.MethodExpression</property-class>
         <property-extension>
             <cdk:signature />
         </property-extension>
@@ -59,10 +59,10 @@
         <display-name>Action Listener</display-name>
         <icon />
         <property-name>actionListener</property-name>
-        <property-class>javax.faces.el.MethodBinding</property-class>
+        <property-class>jakarta.el.MethodExpression</property-class>
         <property-extension>
             <cdk:signature>
-                <cdk:param>javax.faces.event.ActionEvent</cdk:param>
+                <cdk:param>jakarta.faces.event.ActionEvent</cdk:param>
             </cdk:signature>
         </property-extension>
     </property>

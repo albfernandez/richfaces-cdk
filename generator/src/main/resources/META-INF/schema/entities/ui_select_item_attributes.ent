@@ -35,7 +35,7 @@
         <name>value</name>
         <classname>java.lang.Object</classname>
         <description>
-            A value reference pointing at a javax.faces.model.SelectItem
+            A value reference pointing at a jakarta.faces.model.SelectItem
             instance
         </description>
     </property>

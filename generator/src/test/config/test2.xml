@@ -8,7 +8,7 @@
 <components>
     <component>
         <name>other.Test</name>
-        <family>javax.faces.Input</family>
+        <family>jakarta.faces.Input</family>
         <description>Test of component generator</description>
         <displayname>Generated Command</displayname>
         <icon>icon</icon>
@@ -16,13 +16,13 @@
             <name>testfacet</name>
             <displayname> Test of component facet </displayname>
         </facet>
-        <superclass>javax.faces.component.UIInput</superclass>
+        <superclass>jakarta.faces.component.UIInput</superclass>
         <classname>test.other.UITest</classname>
         <renderer generate="true" override="true">
             <name>other.TestRenderer</name>
             <classname>test.other.TestRenderer</classname>
     <!--
-      <superclass>javax.faces.renderer.Renderer</superclass>
+      <superclass>jakarta.faces.renderer.Renderer</superclass>
        -->
             <description>test renderer description</description>
             <displayname>renderer displayname</displayname>
@@ -55,9 +55,9 @@
         </property>
         <property>
             <name>abstractProperty</name>
-            <classname>javax.faces.el.MethodBinding</classname>
+            <classname>jakarta.faces.el.MethodBinding</classname>
             <description>Method binded property description</description>
-            <methodargs>javax.faces.component.UIComponent.class</methodargs>
+            <methodargs>jakarta.faces.component.UIComponent.class</methodargs>
         </property>
     </component>
 </components>

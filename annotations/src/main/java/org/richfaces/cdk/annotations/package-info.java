@@ -4,13 +4,13 @@
  * <p> {@link org.richfaces.cdk.annotations.TagLibrary} defines library-wide parameters</p>
  * <h3>Class-level annotations:</h3>
  * <ul>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfComponent}("component.Type") or &#064;{@link javax.faces.component.FacesComponent}("component.Type").</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfRenderer} Defines JSF {@link javax.faces.render.Renderer} or link renderer with component.</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfConverter} Defines JSF {@link javax.faces.convert.Converter}.</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfValidator} Defines JSF {@link javax.faces.validator.Validator}.</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfBehavior} Defines JSF {@link javax.faces.component.behavior.ClientBehavior}.</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.JsfBehaviorRenderer} Defines JSF {@link javax.faces.render.ClientBehaviorRenderer} or links renderer with behavior.</li>
- * <li>&#064;{@link org.richfaces.cdk.annotations.Event} Defines JSF {@link javax.faces.event.FacesEvent} or links event with component that fires it.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfComponent}("component.Type") or &#064;{@link jakarta.faces.component.FacesComponent}("component.Type").</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfRenderer} Defines JSF {@link jakarta.faces.render.Renderer} or link renderer with component.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfConverter} Defines JSF {@link jakarta.faces.convert.Converter}.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfValidator} Defines JSF {@link jakarta.faces.validator.Validator}.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfBehavior} Defines JSF {@link jakarta.faces.component.behavior.ClientBehavior}.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.JsfBehaviorRenderer} Defines JSF {@link jakarta.faces.render.ClientBehaviorRenderer} or links renderer with behavior.</li>
+ * <li>&#064;{@link org.richfaces.cdk.annotations.Event} Defines JSF {@link jakarta.faces.event.FacesEvent} or links event with component that fires it.</li>
  * </ul>
  * <h3>Annotations used to refine class top level definitions</h3>
  * <ul>

@@ -21,7 +21,7 @@
  */
 package org.richfaces.cdk.generate.java;
 
-import javax.faces.view.facelets.*;
+import jakarta.faces.view.facelets.*;
 import org.richfaces.MethodMetadata;
 import org.richfaces.cdk.generate.java.GeneratedComponent;
 import java.lang.String;

@@ -13,7 +13,7 @@
         <classname>java.lang.Object</classname>
         <description>
             A value reference pointing at a List or Array of
-            javax.faces.model.SelectItem instances
+            jakarta.faces.model.SelectItem instances
         </description>
     </property>
     

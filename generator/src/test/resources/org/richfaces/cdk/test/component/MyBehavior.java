@@ -24,11 +24,11 @@ package org.richfaces.cdk.test.component;
 import org.richfaces.cdk.annotations.JsfConverter;
 import org.richfaces.cdk.annotations.JsfBehavior;
 
-import javax.faces.context.FacesContext;
-import javax.faces.component.UIComponent;
-import javax.faces.component.behavior.Behavior;
-import javax.faces.convert.Converter;
-import javax.faces.event.BehaviorEvent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.behavior.Behavior;
+import jakarta.faces.convert.Converter;
+import jakarta.faces.event.BehaviorEvent;
 
 /**
  * @author akolonitsky

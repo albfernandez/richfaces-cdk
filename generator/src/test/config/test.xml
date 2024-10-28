@@ -15,13 +15,13 @@
             <name>testfacet</name>
             <displayname> Test of component facet </displayname>
         </facet>
-        <superclass>javax.faces.component.UICommand</superclass>
+        <superclass>jakarta.faces.component.UICommand</superclass>
         <classname>test.UITest</classname>
         <renderer generate="true" override="true">
             <name>test.TestRenderer</name>
             <classname>test.TestRenderer</classname>
     <!--
-      <superclass>javax.faces.renderer.Renderer</superclass>
+      <superclass>jakarta.faces.renderer.Renderer</superclass>
        -->
             <description>test renderer description</description>
             <displayname>renderer displayname</displayname>
@@ -54,9 +54,9 @@
         </property>
         <property>
             <name>abstractProperty</name>
-            <classname>javax.faces.el.MethodBinding</classname>
+            <classname>jakarta.faces.el.MethodBinding</classname>
             <description>Method binded property description</description>
-            <methodargs>javax.faces.component.UIComponent.class</methodargs>
+            <methodargs>jakarta.faces.component.UIComponent.class</methodargs>
         </property>
     </component>
 </components>

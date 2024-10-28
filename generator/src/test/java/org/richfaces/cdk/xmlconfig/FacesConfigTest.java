@@ -91,9 +91,9 @@ public class FacesConfigTest extends CdkTestBase {
 
         ComponentModel component = library.getComponents().get(0);
 
-        assertEquals(FacesId.parseId("javax.faces.Panel"), component.getId());
-        assertEquals(FacesId.parseId("javax.faces.Panel"), component.getFamily());
-        assertEquals(ClassName.parseName("javax.faces.component.UIPanel"), component.getTargetClass());
+        assertEquals(FacesId.parseId("jakarta.faces.Panel"), component.getId());
+        assertEquals(FacesId.parseId("jakarta.faces.Panel"), component.getFamily());
+        assertEquals(ClassName.parseName("jakarta.faces.component.UIPanel"), component.getTargetClass());
         assertEquals("panel.gif", component.getIcon().getSmallIcon());
         assertEquals("panel-large.gif", component.getIcon().getLargeIcon());
         assertEquals("Panel component", component.getDescription());

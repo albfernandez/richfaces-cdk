@@ -4,21 +4,20 @@ package ${tag.targetClass.package};
 
 import java.io.Serializable;
 <#if model.hasBindingAttribute=true>
-import javax.el.MethodExpression;
-import javax.el.ELException;
-import javax.el.MethodExpression;
-import javax.faces.context.FacesContext;
-import javax.faces.el.EvaluationException;
-import javax.faces.el.MethodBinding;
-import javax.faces.el.MethodNotFoundException;
-import javax.faces.view.facelets.FaceletContext;
-import javax.faces.view.facelets.MetaRule;
-import javax.faces.view.facelets.MetaRuleset;
-import javax.faces.view.facelets.Metadata;
-import javax.faces.view.facelets.MetadataTarget;
-import javax.faces.view.facelets.TagAttribute;
+import jakarta.el.MethodExpression;
+import jakarta.el.ELException;
+import jakarta.el.MethodExpression;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.el.EvaluationException;
+import jakarta.faces.el.MethodNotFoundException;
+import jakarta.faces.view.facelets.FaceletContext;
+import jakarta.faces.view.facelets.MetaRule;
+import jakarta.faces.view.facelets.MetaRuleset;
+import jakarta.faces.view.facelets.Metadata;
+import jakarta.faces.view.facelets.MetadataTarget;
+import jakarta.faces.view.facelets.TagAttribute;
 </#if>
-import javax.faces.view.facelets.${model}Config;
+import jakarta.faces.view.facelets.${model}Config;
 import ${model.targetClass};
 import ${tag.baseClass};
 <#list model.tagImports as importedClass>import ${importedClass.name};
@@ -35,7 +34,6 @@ public class ${tag.targetClass.simpleName} extends ${tag.baseClass.simpleName} {
     }
 
 <#if model.hasBindingAttribute=true>
-<#assign useMethodBinding=false />
     private static final MetaRule META_RULE = new MetaRule(){
 
         public Metadata applyRule(String name, final TagAttribute attribute, MetadataTarget meta) {
@@ -47,17 +45,9 @@ public class ${tag.targetClass.simpleName} extends ${tag.baseClass.simpleName} {
                         public void applyMetadata(FaceletContext ctx, Object instance) {
                             ((${model.targetClass.simpleName}) instance).${prop.setterName}(getValue(ctx));
                         }
-                        <#if (prop.isBinging)>
-                        <#assign useMethodBinding=true />
-                        @SuppressWarnings("deprecation")
-                        private MethodBinding getValue(FaceletContext ctx){
-                           return new MethodBindingWrapper(attribute.getMethodExpression(ctx, <#if prop.signature?exists>${prop.signature.returnType.simpleName}.class<#else>null</#if>, SIGNATURE));
-                        }
-                        <#else>
                         private MethodExpression getValue(FaceletContext ctx){
                            return attribute.getMethodExpression(ctx, <#if prop.signature?exists>${prop.signature.returnType.simpleName}.class<#else>null</#if>, SIGNATURE);
-                        }
-                        </#if>                        
+                        }                        
                     };
                 }
             </#if></#list>
@@ -72,42 +62,5 @@ public class ${tag.targetClass.simpleName} extends ${tag.baseClass.simpleName} {
         return m;
     }
 
-<#if useMethodBinding=true>
-    @SuppressWarnings({ "serial", "deprecation" })
-    public static final class MethodBindingWrapper extends
-            MethodBinding implements Serializable {
-    
-        private final MethodExpression m;
-    
-        public MethodBindingWrapper(MethodExpression m) {
-            this.m = m;
-        }
-    
-        public Class getType(FacesContext context)
-                throws MethodNotFoundException {
-            try {
-                return m.getMethodInfo(context.getELContext()).getReturnType();
-            } catch (javax.el.MethodNotFoundException e) {
-                throw new MethodNotFoundException(e.getMessage(), e.getCause());
-            } catch (ELException e) {
-                throw new EvaluationException(e.getMessage(), e.getCause());
-            }
-        }
-    
-        public Object invoke(FacesContext context, Object[] params)
-                throws EvaluationException, MethodNotFoundException {
-            try {
-                return m.invoke(context.getELContext(), params);
-            } catch (javax.el.MethodNotFoundException e) {
-                throw new MethodNotFoundException(e.getMessage(), e.getCause());
-            } catch (ELException e) {
-                throw new EvaluationException(e.getMessage(), e.getCause());
-            }
-        }
-    
-        public String getExpressionString() {
-            return m.getExpressionString();
-        }
-    }
-</#if></#if>
+</#if>
 }

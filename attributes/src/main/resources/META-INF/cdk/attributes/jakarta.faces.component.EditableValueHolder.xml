@@ -123,11 +123,11 @@
         <display-name>Validator</display-name>
         <icon />
         <property-name>validator</property-name>
-        <property-class>javax.faces.el.MethodBinding</property-class>
+        <property-class>jakarta.el.MethodExpression</property-class>
         <property-extension>
             <cdk:signature>
-                <cdk:param>javax.faces.context.FacesContext</cdk:param>
-                <cdk:param>javax.faces.component.UIComponent</cdk:param>
+                <cdk:param>jakarta.faces.context.FacesContext</cdk:param>
+                <cdk:param>jakarta.faces.component.UIComponent</cdk:param>
                 <cdk:param>java.lang.Object</cdk:param>
             </cdk:signature>
         </property-extension>
@@ -157,10 +157,10 @@
         <display-name>Value Change Listener</display-name>
         <icon />
         <property-name>valueChangeListener</property-name>
-        <property-class>javax.faces.el.MethodBinding</property-class>
+        <property-class>jakarta.el.MethodExpression</property-class>
         <property-extension>
             <cdk:signature>
-                <cdk:param>javax.faces.event.ValueChangeEvent</cdk:param>
+                <cdk:param>jakarta.faces.event.ValueChangeEvent</cdk:param>
             </cdk:signature>
         </property-extension>
     </property>
