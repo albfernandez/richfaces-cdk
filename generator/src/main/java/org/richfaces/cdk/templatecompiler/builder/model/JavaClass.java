@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.faces.render.Renderer;
+import jakarta.faces.render.Renderer;
 
 import org.richfaces.cdk.model.ClassName;
 

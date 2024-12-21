@@ -48,7 +48,7 @@ import org.richfaces.cdk.model.FacetModel;
 /**
  * <p class="changed_added_4_0">
  * That class process component-related annotations such as {@link org.richfaces.cdk.annotations.JsfComponent} or
- * {@link javax.faces.component.FacesComponent} and stores information in model.
+ * {@link jakarta.faces.component.FacesComponent} and stores information in model.
  * </p>
  *
  * @author asmirnov@exadel.com

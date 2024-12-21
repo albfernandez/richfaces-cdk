@@ -18,18 +18,33 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIComponent.xml" />
+        href="urn:attributes:jakarta.faces.component.UIComponent.xml" />
 
     <property>
         <description>
-            Context-relative URL to retrieve the resource associated with
-            this component. This is an alias for the
-            "value" property.
+            Client identifier of the component for which to display messages.
         </description>
-        <display-name>Source URL</display-name>
+        <display-name>Associated Client Id</display-name>
         <icon />
-        <property-name>url</property-name>
+        <property-name>for</property-name>
         <property-class>java.lang.String</property-class>
+        <property-extension>
+            <cdk:required>true</cdk:required>
+            <cdk:literal>false</cdk:literal>
+        </property-extension>
+    </property>
+
+    <property>
+        <description>
+            Flag indicating whether the detail portion of displayed messages
+            should be included. Default value is
+            "true".
+        </description>
+        <display-name>Show Detail</display-name>
+        <icon />
+        <property-name>showDetail</property-name>
+        <property-class>boolean</property-class>
+        <default-value>true</default-value>
         <property-extension>
             <cdk:literal>false</cdk:literal>
         </property-extension>
@@ -37,12 +52,15 @@
 
     <property>
         <description>
-            The current value of this component.
+            Flag indicating whether the summary portion of displayed messages
+            should be included. Default value is
+            "false".
         </description>
-        <display-name>Value</display-name>
+        <display-name>Show Summary</display-name>
         <icon />
-        <property-name>value</property-name>
-        <property-class>java.lang.Object</property-class>
+        <property-name>showSummary</property-name>
+        <property-class>boolean</property-class>
+        <default-value>false</default-value>
         <property-extension>
             <cdk:literal>false</cdk:literal>
         </property-extension>

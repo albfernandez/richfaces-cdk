@@ -37,7 +37,7 @@ import org.richfaces.cdk.model.ValidatorModel;
  * @author akolonitsky
  * @since Jan 13, 2010
  */
-@SupportedAnnotationTypes({ "javax.faces.component.FacesComponent", JsfValidator.NAME })
+@SupportedAnnotationTypes({ "jakarta.faces.component.FacesComponent", JsfValidator.NAME })
 public class ValidatorProcessor extends ProcessorBase implements CdkAnnotationProcessor {
     @Override
     public void process(Element element, ComponentLibrary library) throws CdkProcessingException {

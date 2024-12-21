@@ -27,11 +27,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import javax.faces.render.RenderKitFactory;
+import jakarta.faces.render.RenderKitFactory;
 
 /**
  * <p class="changed_added_4_0">
- * This annotation defines concrete class as JSF javax.faces.render.Renderer, or abstract class as the base for generated Renderer
+ * This annotation defines concrete class as JSF jakarta.faces.render.Renderer, or abstract class as the base for generated Renderer
  * implementation.
  * </p>
  *

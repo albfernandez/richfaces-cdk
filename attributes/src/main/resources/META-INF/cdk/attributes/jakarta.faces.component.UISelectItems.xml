@@ -18,7 +18,18 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIOutput.xml" />
-    <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.EditableValueHolder.xml" />
+        href="urn:attributes:jakarta.faces.component.UIComponent.xml" />
+
+    <property>
+        <description>
+            The current value of this component.
+        </description>
+        <display-name>Value</display-name>
+        <icon />
+        <property-name>value</property-name>
+        <property-class>java.lang.Object</property-class>
+        <property-extension>
+            <cdk:literal>false</cdk:literal>
+        </property-extension>
+    </property>
 </cdk:properties>

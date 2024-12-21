@@ -16,7 +16,7 @@
     </property>
     <property existintag="true" exist="true" el="true" elonly="true">
         <name>binding</name>
-        <classname>javax.faces.component.UIComponent</classname>
+        <classname>jakarta.faces.component.UIComponent</classname>
         <description>The attribute takes a value-binding expression for a component property of
 a backing bean</description>
     </property>

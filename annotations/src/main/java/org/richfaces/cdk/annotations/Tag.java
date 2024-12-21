@@ -25,9 +25,6 @@ package org.richfaces.cdk.annotations;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import javax.faces.view.facelets.TagHandler;
-import javax.faces.webapp.UIComponentTagBase;
-
 /**
  * <p class="changed_added_4_0">
  * Defines Faces VDL ( Facelets,JSP )tag.
@@ -62,7 +59,7 @@ public @interface Tag {
      *
      * <p class="changed_added_4_0">
      * Tag handler class. Fully qualified class name of the generated or existing tag handler. For {@link TagType#Jsp} it's
-     * javax.servlet.jsp.tagext.JspTag or, more likely, {@link javax.faces.webapp.UIComponentTagBase} instance. For facelets, it's {@link javax.faces.view.facelets.TagHandler} instance.
+     * jakarta.servlet.jsp.tagext.JspTag or, more likely, {@link jakarta.faces.webapp.UIComponentTagBase} instance. For facelets, it's {@link jakarta.faces.view.facelets.TagHandler} instance.
      * </p>
      */
     @Deprecated
@@ -71,7 +68,7 @@ public @interface Tag {
     /**
      * <p class="changed_added_4_5">
      * Tag handler class. Fully qualified class name of the generated or existing tag handler. For {@link TagType#Jsp} it's
-     * javax.servlet.jsp.tagext.JspTag or, more likely, {@link javax.faces.webapp.UIComponentTagBase} instance. For facelets, it's {@link javax.faces.view.facelets.TagHandler} instance.
+     * jakarta.servlet.jsp.tagext.JspTag or, more likely, {@link jakarta.faces.webapp.UIComponentTagBase} instance. For facelets, it's {@link jakarta.faces.view.facelets.TagHandler} instance.
      * </p>
      *
      * @return

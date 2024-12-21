@@ -121,7 +121,7 @@
         <display-name>Parent Component</display-name>
         <icon />
         <property-name>parent</property-name>
-        <property-class>javax.faces.component.UIComponent</property-class>
+        <property-class>jakarta.faces.component.UIComponent</property-class>
         <property-extension>
             <cdk:hidden>true</cdk:hidden>
             <cdk:read-only>true</cdk:read-only>
@@ -185,7 +185,7 @@
         <display-name />
         <icon />
         <property-name>binding</property-name>
-        <property-class>javax.faces.component.UIComponent</property-class>
+        <property-class>jakarta.faces.component.UIComponent</property-class>
         <property-extension>
             <cdk:generate>false</cdk:generate>
             <cdk:literal>false</cdk:literal>

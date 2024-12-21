@@ -22,7 +22,7 @@
  */
 package org.richfaces.cdk.apt;
 
-import javax.faces.component.UIComponentBase;
+import jakarta.faces.component.UIComponentBase;
 
 /**
  * <p class="changed_added_4_0">

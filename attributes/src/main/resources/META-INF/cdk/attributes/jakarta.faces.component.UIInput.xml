@@ -18,19 +18,7 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIInput.xml" />
-
-    <property>
-        <description>
-            Array containing the selected values for this component.
-            This is an alias for the "value" property.
-        </description>
-        <display-name>Selected Values</display-name>
-        <icon />
-        <property-name>selectedValues</property-name>
-        <property-class>java.lang.Object[]</property-class>
-        <property-extension>
-            <cdk:hidden>true</cdk:hidden>
-        </property-extension>
-    </property>
+        href="urn:attributes:jakarta.faces.component.UIOutput.xml" />
+    <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
+        href="urn:attributes:jakarta.faces.component.EditableValueHolder.xml" />
 </cdk:properties>

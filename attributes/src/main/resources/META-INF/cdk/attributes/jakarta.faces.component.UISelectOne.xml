@@ -18,31 +18,5 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIComponent.xml" />
-
-    <property>
-        <description>
-            Name of the parameter associated with this component.
-        </description>
-        <display-name>Property Name</display-name>
-        <icon />
-        <property-name>name</property-name>
-        <property-class>java.lang.String</property-class>
-        <property-extension>
-            <cdk:literal>true</cdk:literal>
-        </property-extension>
-    </property>
-
-    <property>
-        <description>
-            Value of the parameter associated with this component.
-        </description>
-        <display-name>Property Value</display-name>
-        <icon />
-        <property-name>value</property-name>
-        <property-class>java.lang.Object</property-class>
-        <property-extension>
-            <cdk:literal>false</cdk:literal>
-        </property-extension>
-    </property>
+        href="urn:attributes:jakarta.faces.component.UIInput.xml" />
 </cdk:properties>

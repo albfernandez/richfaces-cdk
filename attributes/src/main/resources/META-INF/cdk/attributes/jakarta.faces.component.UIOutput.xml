@@ -18,32 +18,7 @@
 <cdk:properties xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/extensions"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee">
     <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
-        href="urn:attributes:javax.faces.component.UIInput.xml" />
-
-    <property>
-        <description>
-            The current value of this component.
-        </description>
-        <display-name>Value</display-name>
-        <icon />
-        <property-name>value</property-name>
-        <property-class>java.lang.Boolean</property-class>
-        <property-extension>
-            <cdk:literal>false</cdk:literal>
-        </property-extension>
-    </property>
-
-    <property>
-        <description>
-            Flag indicating whether the user has selected this component.
-            This is an alias for the "value" property.
-        </description>
-        <display-name>Selected Flag</display-name>
-        <icon />
-        <property-name>selected</property-name>
-        <property-class>boolean</property-class>
-        <property-extension>
-            <cdk:hidden>true</cdk:hidden>
-        </property-extension>
-    </property>
+        href="urn:attributes:jakarta.faces.component.UIComponent.xml" />
+    <xi:include xpointer="xmlns(cdk=http://jboss.org/schema/richfaces/cdk/extensions)xpointer(/cdk:properties/*)"
+        href="urn:attributes:jakarta.faces.component.ValueHolder.xml" />
 </cdk:properties>

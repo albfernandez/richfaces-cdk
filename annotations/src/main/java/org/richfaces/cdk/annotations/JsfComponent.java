@@ -29,7 +29,7 @@ import java.lang.annotation.Target;
 
 /**
  * <p class="changed_added_4_0">
- * That annotation marks class as JSF component. The difference with JSF 2.0 &#064; {@link javax.faces.component.FacesComponent}
+ * That annotation marks class as JSF component. The difference with JSF 2.0 &#064; {@link jakarta.faces.component.FacesComponent}
  * annotation is what this one could marks abstract class from which a real UI-component implementation will be generated.
  * </p>
  *
@@ -117,7 +117,7 @@ public @interface JsfComponent {
     /**
      * <p class="changed_added_4_0">
      *
-     * {@link javax.faces.event.FacesEvent}s fired by the component.
+     * {@link jakarta.faces.event.FacesEvent}s fired by the component.
      *        </p>
      *
      * @return
@@ -158,8 +158,8 @@ public @interface JsfComponent {
     /**
      * <p class="changed_added_4_0">
      * Defines third-level renderer specific components. Used to generate a whole family of similar components. For example,
-     * {@link javax.faces.component.UIComponentBase} provides {@link javax.faces.component.UICommand} subclass for all command
-     * components, and {@link javax.faces.component.html.HtmlCommandLink} with {@link javax.faces.component.html.HtmlCommandButton}
+     * {@link jakarta.faces.component.UIComponentBase} provides {@link jakarta.faces.component.UICommand} subclass for all command
+     * components, and {@link jakarta.faces.component.html.HtmlCommandLink} with {@link jakarta.faces.component.html.HtmlCommandButton}
      * are renderer-specific components for links and buttons.
      * </p>
      *

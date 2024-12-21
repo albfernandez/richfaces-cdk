@@ -127,7 +127,7 @@ public @interface RendererSpecificComponent {
     /**
      * <p class="changed_added_4_0">
      *
-     * {@link javax.faces.event.FacesEvent}s fired by the component.
+     * {@link jakarta.faces.event.FacesEvent}s fired by the component.
      *        </p>
      *
      * @return

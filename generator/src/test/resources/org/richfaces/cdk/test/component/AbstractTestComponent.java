@@ -28,8 +28,8 @@ package org.richfaces.cdk.test.component;
 import org.richfaces.cdk.annotations.Attribute;
 import org.richfaces.cdk.annotations.JsfComponent;
 
-import javax.faces.component.UIComponent;
-import javax.faces.component.ValueHolder;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.ValueHolder;
 import java.util.List;
 
 /**

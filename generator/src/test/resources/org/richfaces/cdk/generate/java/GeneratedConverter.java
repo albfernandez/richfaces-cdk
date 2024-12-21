@@ -21,12 +21,12 @@
  */
 package org.richfaces.cdk.generate.java;
 
-import javax.annotation.Generated;
-import javax.faces.component.PartialStateHolder;
-import javax.faces.component.StateHelper;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.convert.Converter;
+import jakarta.annotation.Generated;
+import jakarta.faces.component.PartialStateHolder;
+import jakarta.faces.component.StateHelper;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
 import org.richfaces.component.PartialStateHolderHelper;
 import org.richfaces.cdk.generate.freemarker.PropertyModel;
 

@@ -5,7 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import javax.faces.validator.Validator;
+import jakarta.faces.validator.Validator;
 
 /**
  * This annotation defines concrete class as JSF {@link Validator}, or abstract class as the base for generated Validator

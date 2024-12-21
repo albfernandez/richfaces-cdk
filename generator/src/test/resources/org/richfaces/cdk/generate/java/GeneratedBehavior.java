@@ -21,12 +21,12 @@
  */
 package org.richfaces.cdk.generate.java;
 
-import javax.annotation.Generated;
-import javax.faces.component.PartialStateHolder;
-import javax.faces.component.behavior.Behavior;
-import javax.faces.context.FacesContext;
-import javax.faces.event.BehaviorEvent;
-import javax.faces.el.ValueBinding;
+import jakarta.annotation.Generated;
+import jakarta.faces.component.PartialStateHolder;
+import jakarta.faces.component.behavior.Behavior;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.event.BehaviorEvent;
+import jakarta.faces.el.ValueBinding;
 
 /**
  * 

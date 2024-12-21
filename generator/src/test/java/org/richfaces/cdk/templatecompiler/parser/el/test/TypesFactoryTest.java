@@ -31,7 +31,7 @@ import java.io.Writer;
 import java.util.List;
 import java.util.Map;
 
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

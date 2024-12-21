@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.text.MessageFormat;
 
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 import org.richfaces.cdk.model.AttributeModel;
 import org.richfaces.cdk.model.ClassName;

@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.el.ELContext;
-import javax.faces.component.UIComponent;
+import jakarta.faces.component.UIComponent;
 import javax.lang.model.element.Name;
 
 import org.richfaces.cdk.CdkClassLoader;

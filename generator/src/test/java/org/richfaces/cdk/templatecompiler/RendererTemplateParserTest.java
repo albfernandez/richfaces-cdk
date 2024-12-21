@@ -39,9 +39,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
 
-import javax.faces.event.ActionEvent;
-import javax.faces.render.RenderKitFactory;
-import javax.faces.validator.Validator;
+import jakarta.faces.event.ActionEvent;
+import jakarta.faces.render.RenderKitFactory;
+import jakarta.faces.validator.Validator;
 
 import org.easymock.EasyMock;
 import org.junit.Test;
@@ -138,7 +138,7 @@ public class RendererTemplateParserTest extends CdkTestBase {
 
     /**
      * Checks that method signature satisfies the following declaration:
-     * <code>void actionListener(javax.faces.event.ActionEvent)</code>
+     * <code>void actionListener(jakarta.faces.event.ActionEvent)</code>
      *
      * @param actionListenerProperty
      */
@@ -152,7 +152,7 @@ public class RendererTemplateParserTest extends CdkTestBase {
 
     /**
      * Checks that method signature satisfies the following declaration:
-     * <code>float coolMethod(int, java.lang.String, javax.faces.validator.Validator)</code>
+     * <code>float coolMethod(int, java.lang.String, jakarta.faces.validator.Validator)</code>
      *
      * @param coolMethodProperty
      */

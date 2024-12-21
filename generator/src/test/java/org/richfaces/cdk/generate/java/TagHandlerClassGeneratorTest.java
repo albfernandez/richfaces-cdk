@@ -29,7 +29,7 @@ import static org.easymock.EasyMock.verify;
 
 import java.io.StringWriter;
 
-import javax.faces.view.facelets.ComponentHandler;
+import jakarta.faces.view.facelets.ComponentHandler;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

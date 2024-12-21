@@ -5,9 +5,9 @@
     
     <property  attachedstate="true">
         <name>action</name>
-        <classname>javax.faces.el.MethodBinding</classname>
+        <classname>jakarta.el.MethodExpression</classname>
         <description>
-            MethodBinding pointing at the application action to be invoked,
+            MethodExpression pointing at the application action to be invoked,
             if this UIComponent is activated by you, during the Apply
             Request Values or Invoke Application phase of the request
             processing lifecycle, depending on the value of the immediate
@@ -18,7 +18,7 @@
     </property>
     <property  attachedstate="true" hidden="true">
         <name>actionExpression</name>
-        <classname>javax.el.MethodExpression</classname>
+        <classname>jakarta.el.MethodExpression</classname>
         <description>
             MethodExpression pointing at the application action to be invoked,
             if this UIComponent is activated by you, during the Apply
@@ -31,11 +31,11 @@
     </property>
     <property elonly="true"  attachedstate="true">
         <name>actionListener</name>
-        <classname>javax.faces.el.MethodBinding</classname>
+        <classname>jakarta.el.MethodExpression</classname>
         <description>
-            MethodBinding pointing at method accepting  an ActionEvent with return type void
+            MethodExpression pointing at method accepting  an ActionEvent with return type void
         </description>
-        <methodargs>javax.faces.event.ActionEvent</methodargs>
+        <methodargs>jakarta.faces.event.ActionEvent</methodargs>
     </property>
     <property>
         <name>immediate</name>

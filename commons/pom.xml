@@ -4,9 +4,10 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
-        <version>4.6.2-SNAPSHOT</version>
+        <version>10.0.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
+    
     <artifactId>commons</artifactId>
     <name>RichFaces CDK Commons</name>
     <build>
@@ -28,10 +29,16 @@
         </plugins>
     </build>
     <dependencies>
+    	<!--MZ
         <dependency>
             <groupId>org.sonatype.sisu</groupId>
             <artifactId>sisu-guice</artifactId>
         </dependency>
+        -->
+        <dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+		</dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -49,6 +56,7 @@
         </dependency>
 
     </dependencies>
+    
     <profiles>
         <profile>
             <id>java9+</id>

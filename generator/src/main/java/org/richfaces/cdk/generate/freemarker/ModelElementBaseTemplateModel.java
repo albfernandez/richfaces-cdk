@@ -180,7 +180,7 @@ public class ModelElementBaseTemplateModel extends StringModel implements Templa
         if (model instanceof ComponentModel) {
             ComponentModel component = (ComponentModel) model;
             if (getEventNames().size() > 0) {
-                result.add(ClassName.parseName("javax.faces.component.behavior.ClientBehaviorHolder"));
+                result.add(ClassName.parseName("jakarta.faces.component.behavior.ClientBehaviorHolder"));
             }
             for (EventModel event : component.getEvents()) {
                 ClassName sourceInterface = event.getSourceInterface();

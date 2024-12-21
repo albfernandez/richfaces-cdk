@@ -5,7 +5,7 @@
     <cc:interface>
         <cdk:class>org.richfaces.cdk.test.renderkit.rf4_xhtml.TestRenderer
         </cdk:class>
-        <cdk:superclass>javax.faces.render.Renderer</cdk:superclass>
+        <cdk:superclass>jakarta.faces.render.Renderer</cdk:superclass>
         <cdk:component-family>org.richfaces.cdk.test.Test
         </cdk:component-family>
         <cdk:renderer-type>org.richfaces.TestRenderer</cdk:renderer-type>

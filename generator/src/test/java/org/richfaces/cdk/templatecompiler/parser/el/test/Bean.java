@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 
 public class Bean {
     private UIComponent[] array = new UIComponent[] { new UIComponent() };

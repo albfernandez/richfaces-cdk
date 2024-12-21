@@ -3,19 +3,19 @@ package ${tag.targetClass.package};
 import java.io.IOException;
 import java.io.Serializable;
 
-import javax.el.ELContext;
-import javax.el.MethodExpression;
-import javax.el.ValueExpression;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.event.AbortProcessingException;
-import javax.faces.view.facelets.ComponentHandler;
-import javax.faces.view.facelets.FaceletContext;
-import javax.faces.view.facelets.TagAttribute;
-import javax.faces.view.facelets.TagAttributeException;
-import javax.faces.view.facelets.TagConfig;
-import javax.faces.view.facelets.TagException;
-import javax.faces.view.facelets.TagHandler;
+import jakarta.el.ELContext;
+import jakarta.el.MethodExpression;
+import jakarta.el.ValueExpression;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.event.AbortProcessingException;
+import jakarta.faces.view.facelets.ComponentHandler;
+import jakarta.faces.view.facelets.FaceletContext;
+import jakarta.faces.view.facelets.TagAttribute;
+import jakarta.faces.view.facelets.TagAttributeException;
+import jakarta.faces.view.facelets.TagConfig;
+import jakarta.faces.view.facelets.TagException;
+import jakarta.faces.view.facelets.TagHandler;
 
 import ${model.type};
 import ${model.listenerInterface};
@@ -130,8 +130,8 @@ public class ${tag.targetClass.simpleName} extends TagHandler {
     /*
      * (non-Javadoc)
      * 
-     * @see javax.faces.view.facelets.FaceletHandler#apply(javax.faces.view.facelets.FaceletContext,
-     * javax.faces.component.UIComponent)
+     * @see jakarta.faces.view.facelets.FaceletHandler#apply(jakarta.faces.view.facelets.FaceletContext,
+     * jakarta.faces.component.UIComponent)
      */
     public void apply(FaceletContext ctx, UIComponent parent) throws IOException {
         if (null != parent && ComponentHandler.isNew(parent)) {

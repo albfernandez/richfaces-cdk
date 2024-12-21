@@ -25,13 +25,13 @@
 
 package org.richfaces.cdk.test.component;
 
-import javax.el.MethodExpression;
+import jakarta.el.MethodExpression;
 
-import javax.faces.component.ActionSource2;
-import javax.faces.component.FacesComponent;
-import javax.faces.component.UIComponentBase;
-import javax.faces.el.MethodBinding;
-import javax.faces.event.ActionListener;
+import jakarta.faces.component.ActionSource2;
+import jakarta.faces.component.FacesComponent;
+import jakarta.faces.component.UIComponentBase;
+import jakarta.faces.el.MethodBinding;
+import jakarta.faces.event.ActionListener;
 
 /**
  * <p class="changed_added_4_0"></p>
@@ -44,7 +44,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.UIComponent#getFamily()
+     * @see jakarta.faces.component.UIComponent#getFamily()
      */
     @Override
     public String getFamily() {
@@ -53,7 +53,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#addActionListener(javax.faces.event.ActionListener)
+     * @see jakarta.faces.component.ActionSource#addActionListener(jakarta.faces.event.ActionListener)
      */
     public void addActionListener(ActionListener listener) {
 
@@ -62,7 +62,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#getAction()
+     * @see jakarta.faces.component.ActionSource#getAction()
      */
     public MethodBinding getAction() {
 
@@ -72,7 +72,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#getActionListener()
+     * @see jakarta.faces.component.ActionSource#getActionListener()
      */
     public MethodBinding getActionListener() {
 
@@ -82,7 +82,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#getActionListeners()
+     * @see jakarta.faces.component.ActionSource#getActionListeners()
      */
     public ActionListener[] getActionListeners() {
 
@@ -92,7 +92,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#isImmediate()
+     * @see jakarta.faces.component.ActionSource#isImmediate()
      */
     public boolean isImmediate() {
 
@@ -102,7 +102,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#removeActionListener(javax.faces.event.ActionListener)
+     * @see jakarta.faces.component.ActionSource#removeActionListener(jakarta.faces.event.ActionListener)
      */
     public void removeActionListener(ActionListener listener) {
 
@@ -111,7 +111,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#setAction(javax.faces.el.MethodBinding)
+     * @see jakarta.faces.component.ActionSource#setAction(jakarta.faces.el.MethodBinding)
      */
     public void setAction(MethodBinding action) {
 
@@ -120,7 +120,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#setActionListener(javax.faces.el.MethodBinding)
+     * @see jakarta.faces.component.ActionSource#setActionListener(jakarta.faces.el.MethodBinding)
      */
     public void setActionListener(MethodBinding actionListener) {
 
@@ -134,7 +134,7 @@ public class UITestCommand extends UIComponentBase implements ActionSource2 {
 
     /*
      *  (non-Javadoc)
-     * @see javax.faces.component.ActionSource#setImmediate(boolean)
+     * @see jakarta.faces.component.ActionSource#setImmediate(boolean)
      */
     public void setImmediate(boolean immediate) {
 

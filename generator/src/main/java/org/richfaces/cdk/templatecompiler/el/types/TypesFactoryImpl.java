@@ -41,15 +41,15 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.faces.application.Application;
-import javax.faces.component.UIComponent;
-import javax.faces.component.behavior.Behavior;
-import javax.faces.context.FacesContext;
-import javax.faces.convert.Converter;
-import javax.faces.event.FacesEvent;
-import javax.faces.model.DataModel;
-import javax.faces.render.Renderer;
-import javax.faces.validator.Validator;
+import jakarta.faces.application.Application;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.behavior.Behavior;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
+import jakarta.faces.event.FacesEvent;
+import jakarta.faces.model.DataModel;
+import jakarta.faces.render.Renderer;
+import jakarta.faces.validator.Validator;
 
 import org.richfaces.cdk.CdkClassLoader;
 import org.richfaces.cdk.Logger;

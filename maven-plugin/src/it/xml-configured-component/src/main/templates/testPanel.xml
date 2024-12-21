@@ -34,7 +34,7 @@
                 </div>
             </c:if>
             <c:forEach items="#{component.children}" var="iterationVar">
-                <cdk:call expression='((javax.faces.component.UIComponent)iterationVar).encodeAll(facesContext)' />
+                <cdk:call expression='((jakarta.faces.component.UIComponent)iterationVar).encodeAll(facesContext)' />
             </c:forEach>
         </div>
     </cc:implementation>

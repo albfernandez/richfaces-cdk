@@ -27,10 +27,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import javax.faces.component.behavior.ClientBehaviorHolder;
-import javax.el.MethodExpression;
-import javax.faces.component.UIOutput;
-import javax.faces.el.MethodBinding;
+import jakarta.faces.component.behavior.ClientBehaviorHolder;
+import jakarta.el.MethodExpression;
+import jakarta.faces.component.UIOutput;
+import jakarta.faces.el.MethodBinding;
 
 /**
  * 

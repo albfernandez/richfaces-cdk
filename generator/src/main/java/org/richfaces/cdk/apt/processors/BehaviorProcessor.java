@@ -42,7 +42,7 @@ import org.richfaces.cdk.model.ComponentLibrary;
  * @author asmirnov@exadel.com
  *
  */
-@SupportedAnnotationTypes({ "javax.faces.component.FacesComponent", JsfBehavior.NAME })
+@SupportedAnnotationTypes({ "jakarta.faces.component.FacesComponent", JsfBehavior.NAME })
 public class BehaviorProcessor extends ProcessorBase implements CdkAnnotationProcessor {
     @Override
     public void process(Element element, ComponentLibrary library) throws CdkProcessingException {

@@ -9,7 +9,7 @@
     </property>
     <property  attachedstate="true">
         <name>converter</name>
-        <classname>javax.faces.convert.Converter</classname>
+        <classname>jakarta.faces.convert.Converter</classname>
         <description>
             Id of Converter to be used or reference to a Converter
         </description>
