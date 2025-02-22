@@ -22,8 +22,7 @@
         -->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
-            <artifactId>myfaces-api</artifactId>
-            <version>4.0.2</version>
+            <artifactId>myfaces-api</artifactId>            
             <scope>provided</scope>
         </dependency>
     </dependencies>
