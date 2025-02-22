@@ -19,7 +19,7 @@
             <plugin>
                 <groupId>com.github.albfernandez.richfaces.cdk</groupId>
                 <artifactId>richfaces-cdk-maven-plugin</artifactId>
-                <version>10.0.1-SNAPSHOT</version>
+                <version>${version}</version>
                 <configuration>
                 </configuration>
                 <executions>
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>com.github.albfernandez.test-jsf</groupId>
             <artifactId>jsf-mock</artifactId>
-            <version>10.0.1-SNAPSHOT</version>
+            <version>${version.jsftest}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -70,12 +70,12 @@
         <dependency>
             <groupId>com.github.albfernandez.richfaces.cdk</groupId>
             <artifactId>annotations</artifactId>
-            <version>10.0.1-SNAPSHOT</version>
+            <version>${version}</version>
         </dependency>
         <dependency>
-            <groupId>org.richfaces.framework</groupId>
-            <artifactId>richfaces-commons</artifactId>
-            <version>10.0.1-SNAPSHOT</version>
+            <groupId>com.github.albfernandez.richfaces.cdk</groupId>
+            <artifactId>commons</artifactId>
+            <version>${version}</version>
         </dependency>
         <dependency>
             <groupId>javax.el</groupId>

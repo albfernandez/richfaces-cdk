@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.github.albfernandez.richfaces.cdk</groupId>
             <artifactId>annotations</artifactId>
-            <version>10.0.1-SNAPSHOT</version>
+            <version>${version}</version>
         </dependency>
         <dependency>
             <groupId>javax.el</groupId>
