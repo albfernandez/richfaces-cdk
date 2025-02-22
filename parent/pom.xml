@@ -431,16 +431,6 @@
 							</manifestEntries>
 						</archive>
 					</configuration>
-
-					<executions>
-						<execution>
-							<id>generate-source</id>
-							<phase>generate-sources</phase>
-							<goals>
-								<goal>jar-no-fork</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -509,16 +499,6 @@
 						</manifestEntries>
 					</archive>
 				</configuration>
-
-				<executions>
-					<execution>
-						<id>generate-source</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
