@@ -8,7 +8,7 @@
 
 	<groupId>com.github.albfernandez.richfaces.cdk</groupId>
 	<artifactId>parent</artifactId>
-	<version>10.0.1-SNAPSHOT</version>
+	<version>10.0.0</version>
 	<packaging>pom</packaging>
 	<name>RichFaces CDK Parent</name>
 	<description>RichFaces Component Development Kit (CDK)</description>
@@ -350,52 +350,19 @@
 						</dependency>
 					</dependencies>
 				</plugin>
-				<!-- //TODO make work with groovy 2+ java 11 -->
-				<!-- <plugin> -->
-				<!-- <groupId>org.codehaus.groovy.maven</groupId> -->
-				<!-- <artifactId>gmaven-plugin</artifactId> -->
-				<!-- <version>${version.gmaven.plugin}</version> -->
-				<!-- <dependencies> -->
-				<!-- <dependency> -->
-				<!-- <groupId>org.codehaus.groovy.maven.runtime</groupId> -->
-				<!-- <artifactId>gmaven-runtime-1.6</artifactId> -->
-				<!-- <version>${version.gmaven.plugin}</version> -->
-				<!-- </dependency> -->
-				<!-- </dependencies> -->
-				<!-- </plugin> -->
+
 				<plugin>
 					<groupId>org.codehaus.modello</groupId>
 					<artifactId>modello-maven-plugin</artifactId>
 					<version>${version.modello.plugin}</version>
 				</plugin>
-				<!-- <plugin> <artifactId>maven-release-plugin</artifactId> <configuration> 
-					<autoVersionSubmodules>true</autoVersionSubmodules> <pushChanges>false</pushChanges> 
-					<localCheckout>true</localCheckout> </configuration> </plugin> -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.10.0</version>
 					<configuration>
-						<source>21</source>
-						<!--MZ
-						<additionalparam>${javadoc.opts}</additionalparam>
-						<links>
-							<link>https://docs.oracle.com/javase/8/docs/api/</link>
-							<link>https://docs.oracle.com/javaee/7/api/</link>
-						</links>
-						-->
+						<source>11</source>
 					</configuration>
-					<!--MZ
-					<executions>
-						<execution>
-							<id>generate-javadoc</id>
-							<phase>package</phase>
-							<goals>
-								<goal>jar</goal>
-							</goals>
-						</execution>
-					</executions>
-					-->
 				</plugin>
 				<!-- Packaging -->
 				<plugin>
@@ -410,9 +377,6 @@
 							<manifestEntries>
 								<Seam-Version>${project.version}</Seam-Version>
 								<Build-Time>${maven.build.timestamp}</Build-Time>
-								<!--MZ
-								<Automatic-Module-Name>org.jboss.seam.${project.artifactId}</Automatic-Module-Name>
-								-->
 							</manifestEntries>
 						</archive>
 					</configuration>
@@ -431,37 +395,6 @@
 								<Build-Time>${maven.build.timestamp}</Build-Time>
 							</manifestEntries>
 						</archive>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-gpg-plugin</artifactId>
-					<version>3.2.7</version>
-					<configuration>
-						<keyname>${gpg.keyname}</keyname>
-						<passphraseServerId>${gpg.keyname}</passphraseServerId>
-					</configuration>
-					<!--MZ
-					<executions>
-						<execution>
-							<id>sign-artifacts</id>
-							<phase>verify</phase>
-							<goals>
-								<goal>sign</goal>
-							</goals>
-						</execution>
-					</executions>
-					-->
-				</plugin>
-				<plugin>
-					<groupId>org.sonatype.plugins</groupId>
-					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.7.0</version>
-					<extensions>true</extensions>
-					<configuration>
-						<serverId>ossrh</serverId>
-						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
 				</plugin>
 				
@@ -505,57 +438,49 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<configuration>
-					<source>21</source>
-					<!--MZ
-					<additionalparam>${javadoc.opts}</additionalparam>
-					<links>
-						<link>https://docs.oracle.com/javase/8/docs/api/</link>
-						<link>https://docs.oracle.com/javaee/7/api/</link>
-					</links>
-					-->
-				</configuration>
-				<!--MZ
-				<executions>
-					<execution>
-						<id>generate-javadoc</id>
-						<phase>package</phase>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-				-->
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<configuration>
-					<keyname>${gpg.keyname}</keyname>
-					<passphraseServerId>${gpg.keyname}</passphraseServerId>
-				</configuration>
-				<!--MZ
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-				-->
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					<source>11</source>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>sign</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>3.2.7</version>
+						<configuration>
+							<keyname>${gpg.keyname}</keyname>
+							<passphraseServerId>${gpg.keyname}</passphraseServerId>
+						</configuration>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.7.0</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
+				</plugins>		
+			</build>		
+		</profile>
+	</profiles>
 
 </project>

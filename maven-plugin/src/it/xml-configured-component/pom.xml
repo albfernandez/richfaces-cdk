@@ -5,11 +5,11 @@
     <groupId>com.github.albfernandez.richfaces.cdk</groupId>
     <artifactId>xml-configured-component</artifactId>
     <name>Test component configured by faces-config</name>
-    <version>10.0.1-SNAPSHOT</version>
+    <version>10.0.0</version>
     <parent>
         <groupId>org.richfaces</groupId>
         <artifactId>richfaces-root-parent</artifactId>
-        <version>10.0.1-SNAPSHOT</version>
+        <version>10.0.0</version>
         <relativePath>../../../../build/parent/pom.xml</relativePath>
     </parent>
     <properties>
