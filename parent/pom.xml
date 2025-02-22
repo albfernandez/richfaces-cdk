@@ -375,7 +375,7 @@
 							<manifestEntries>
 								<Seam-Version>${project.version}</Seam-Version>
 								<Build-Time>${maven.build.timestamp}</Build-Time>
-								<Automatic-Module-Name>org.jboss.seam.${project.artifactId}</Automatic-Module-Name>
+								<!--<Automatic-Module-Name>org.richfaces.cdk.${project.artifactId}</Automatic-Module-Name>-->
 							</manifestEntries>
 						</archive>
 					</configuration>
@@ -394,16 +394,6 @@
 							</manifestEntries>
 						</archive>
 					</configuration>
-
-					<executions>
-						<execution>
-							<id>generate-source</id>
-							<phase>generate-sources</phase>
-							<goals>
-								<goal>jar-no-fork</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
