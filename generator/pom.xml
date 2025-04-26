@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.albfernandez.richfaces.cdk</groupId>
         <artifactId>parent</artifactId>
-        <version>10.0.0</version>
+        <version>10.0.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
