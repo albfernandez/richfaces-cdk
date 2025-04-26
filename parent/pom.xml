@@ -76,7 +76,7 @@
 		<version.jcommander>1.78</version.jcommander>
 		<version.plexus-utils>3.3.0</version.plexus-utils>
 		<version.plexus-velocity>1.3</version.plexus-velocity>
-		<version.maven-core>3.0.4</version.maven-core>
+		<version.maven-core>3.8.1</version.maven-core>
 		<version.maven-compiler>3.8.1</version.maven-compiler>
 		<version.maven-javadoc>3.0.1</version.maven-javadoc>
 		<version.maven-archiver>3.6.0</version.maven-archiver>
