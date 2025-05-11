@@ -4,11 +4,11 @@
     <groupId>com.github.albfernandez.richfaces.cdk</groupId>
     <artifactId>renderer-template-test</artifactId>
     <name>Test for renderer templates compilation</name>
-    <version>10.0.1-SNAPSHOT</version>
+    <version>10.0.1</version>
     <parent>
         <groupId>org.richfaces</groupId>
         <artifactId>richfaces-root-parent</artifactId>
-        <version>10.0.1-SNAPSHOT</version>
+        <version>10.0.1</version>
         <relativePath>../../../../build/parent/pom.xml</relativePath>
     </parent>
     <properties>

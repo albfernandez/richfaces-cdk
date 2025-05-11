@@ -4,11 +4,10 @@ This guide provides a chronological steps which goes through release tagging, st
 
 ## Check the SNAPSHOT builds and pass the tests
 
-Check that the project builds in java 8 and java 11.
+Check that the project builds in java 11.
 
 ```bash
-mvn clean package verify
-JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ mvn clean package verify 
+mvn clean package verify 
 ```
 
 ## Set version and build 
@@ -18,8 +17,8 @@ JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ mvn clean package verify
 mvn clean package verify
 mvn -Psign clean package javadoc:jar source:jar install deploy
 git add -A
-git commit -S -m 'Release <3.2.16>'
-git tag -a <v.3.2.16> -m "Tagging release <3.2.16>"
+git commit -S -m 'Release 10.0.1'
+git tag -a v.10.0.1 -m "Tagging release 10.0.1"
 git push
 git push --tags
 ```

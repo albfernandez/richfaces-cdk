@@ -14,7 +14,7 @@ import jakarta.faces.el.ValueBinding;
 /**
  * ${description?if_exists}
  **/
-@Generated({"RichFaces CDK", "4.5.0-SNAPSHOT"})
+@Generated({"RichFaces CDK", "10.0.1"})
 public class ${targetClass.simpleName} extends ${baseClass} implements Validator, PartialStateHolder {
 
     @Override

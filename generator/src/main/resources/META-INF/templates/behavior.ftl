@@ -13,7 +13,7 @@ import jakarta.faces.el.ValueBinding;
 /**
  * ${description?if_exists}
  **/
-@Generated({"RichFaces CDK", "4.5.0-SNAPSHOT"})
+@Generated({"RichFaces CDK", "10.0.1"})
 public class ${targetClass.simpleName} extends ${baseClass} implements Behavior, PartialStateHolder
 <#if (implemented?size > 0)>, <@util.concat seq=implemented ; interface>${interface.simpleName}</@util.concat></#if> {
 

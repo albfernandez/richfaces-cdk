@@ -35,7 +35,7 @@ import jakarta.faces.el.MethodBinding;
 /**
  * 
  **/
-@Generated({"RichFaces CDK", "4.5.0-SNAPSHOT"})
+@Generated({"RichFaces CDK", "10.0.1"})
 public class GeneratedComponent extends UIOutput
     implements ClientBehaviorHolder
     {
