@@ -40,7 +40,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.UnmarshallerHandler;
 import javax.xml.bind.util.ValidationEventCollector;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.sax.SAXSource;
@@ -53,6 +52,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.ext.EntityResolver2;
+import org.xml.sax.helpers.XMLReaderFactory;
 
 import com.google.inject.Inject;
 
@@ -125,7 +125,8 @@ public class JAXBBinding implements JAXB {
         	
         	// TODO review parameters, 
         	// https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html
-            XMLReader xmlReader = SAXParserFactory.newDefaultInstance().newSAXParser().getXMLReader();
+//            XMLReader xmlReader = SAXParserFactory.newDefaultInstance().newSAXParser().getXMLReader();
+        	XMLReader xmlReader = XMLReaderFactory.createXMLReader();
 
             xmlReader.setEntityResolver(resolver);
             xmlReader.setFeature("http://xml.org/sax/features/validation", true);
@@ -164,9 +165,7 @@ public class JAXBBinding implements JAXB {
             throw new CdkException("JAXB Unmarshaller input error: " + e.getMessage(), e);
         } catch (SAXException e) {
             throw new CdkException("XML error: " + e.getMessage(), e);
-        } catch (ParserConfigurationException e) {
-        	throw new CdkException("XML configuration error: " + e.getMessage(), e);
-		} finally {
+        } finally {
 
             // TODO Refactoring
         }
