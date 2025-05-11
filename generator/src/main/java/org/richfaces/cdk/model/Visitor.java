@@ -58,5 +58,6 @@ public interface Visitor<R, D> {
 
     R visitFunction(FunctionModel model, D param);
 
-    R visit(ModelElement model, D param);
+    @SuppressWarnings("rawtypes")
+	R visit(ModelElement model, D param);
 }

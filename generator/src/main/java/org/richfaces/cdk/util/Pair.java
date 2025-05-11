@@ -89,7 +89,8 @@ public class Pair<A, B> {
      * @see java.lang.Object#equals(java.lang.Object)
      */
 
-    @Override
+    @SuppressWarnings("rawtypes")
+	@Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;

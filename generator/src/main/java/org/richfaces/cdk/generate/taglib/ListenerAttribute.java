@@ -45,7 +45,7 @@ public enum ListenerAttribute {
     private String getDescription(EventModel model) {
         try {
             Description annotation = ListenerAttribute.class.getField(this.toString()).getAnnotation(Description.class);
-            Derivator derivator = annotation.derivator().newInstance();
+            Derivator derivator = annotation.derivator().getDeclaredConstructor().newInstance();
             return derivator.derive(annotation.base(), model);
         } catch (Exception e) {
             throw new IllegalStateException(e);

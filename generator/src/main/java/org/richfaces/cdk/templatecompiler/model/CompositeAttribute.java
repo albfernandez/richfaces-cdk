@@ -35,7 +35,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.NONE)
 public class CompositeAttribute implements Serializable {
 
-    @XmlAttribute(required = true)
+    private static final long serialVersionUID = 6081186890840818977L;
+
+	@XmlAttribute(required = true)
     private String name;
 
     @XmlAttribute

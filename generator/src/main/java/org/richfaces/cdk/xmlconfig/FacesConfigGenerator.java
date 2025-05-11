@@ -103,7 +103,8 @@ public class FacesConfigGenerator implements CdkWriter {
      * @param library
      * @return
      */
-    private boolean empty(ComponentLibrary library) {
+    @SuppressWarnings("unused")
+	private boolean empty(ComponentLibrary library) {
 
         return library.getComponents().isEmpty() && library.getBehaviors().isEmpty() && library.getConverters().isEmpty()
                 && library.getEvents().isEmpty() && library.getFunctions().isEmpty() && library.getListeners().isEmpty()

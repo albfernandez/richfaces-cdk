@@ -53,13 +53,13 @@ public class FreeMakerUtils implements TemplateHashModel {
             "static", "void", "class", "finally", "long", "strictfp", "volatile", "const", "float", "native", "super", "while");
     private static final ImmutableMap<String, ? extends TemplateMethodModel> FUNCTIONS = ImmutableMap
             .<String, TemplateMethodModel>builder().put("version", new TemplateMethodModelEx() {
-                @SuppressWarnings("unchecked")
+                @SuppressWarnings("rawtypes")
                 @Override
                 public Object exec(List arguments) throws TemplateModelException {
                     return new SimpleScalar("4.0.0");
                 }
             }).put("capitaliyze", new TemplateMethodModel() {
-                @SuppressWarnings("unchecked")
+                @SuppressWarnings("rawtypes")
                 @Override
                 public Object exec(List arguments) throws TemplateModelException {
                     if (arguments.size() == 1) {
@@ -69,7 +69,7 @@ public class FreeMakerUtils implements TemplateHashModel {
                     }
                 }
             }).put("isKeyword", new TemplateMethodModel() {
-                @SuppressWarnings("unchecked")
+                @SuppressWarnings("rawtypes")
                 @Override
                 public Object exec(List arguments) throws TemplateModelException {
                     if (arguments.size() == 1) {

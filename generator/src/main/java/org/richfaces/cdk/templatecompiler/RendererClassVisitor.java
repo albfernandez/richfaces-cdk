@@ -343,7 +343,7 @@ public class RendererClassVisitor implements TemplateVisitor {
     }
 
     private void flushToEncodeMethod(String encodeMethodName, boolean enforce) {
-        flushToMethod(encodeMethodName, enforce, true, Collections.EMPTY_LIST);
+        flushToMethod(encodeMethodName, enforce, true, Collections.emptyList());
         createMethodContext();
     }
 

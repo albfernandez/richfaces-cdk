@@ -217,7 +217,8 @@ public final class JavaUtils {
         }
     }
 
-    public static void writeProperty(Object source, Object destination, PropertyDescriptor targetProperty,
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	public static void writeProperty(Object source, Object destination, PropertyDescriptor targetProperty,
             PropertyDescriptor sourceProperty) throws IllegalAccessException, InvocationTargetException {
         Method readMethod = sourceProperty.getReadMethod();
         if (readMethod == null) {

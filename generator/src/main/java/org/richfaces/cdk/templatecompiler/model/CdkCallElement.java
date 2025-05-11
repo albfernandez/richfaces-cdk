@@ -35,7 +35,8 @@ import org.richfaces.cdk.CdkException;
 @XmlRootElement(name = "call", namespace = Template.CDK_NAMESPACE)
 @XmlAccessorType(XmlAccessType.NONE)
 public class CdkCallElement implements ModelElement {
-    @XmlAttribute
+    private static final long serialVersionUID = 8976839381884346823L;
+	@XmlAttribute
     private String expression;
     @XmlValue
     private String bodyValue;

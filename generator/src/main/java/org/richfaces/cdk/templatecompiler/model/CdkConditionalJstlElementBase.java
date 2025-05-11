@@ -31,7 +31,8 @@ import javax.xml.bind.annotation.XmlAttribute;
  */
 @XmlAccessorType(XmlAccessType.NONE)
 public abstract class CdkConditionalJstlElementBase extends ModelFragment {
-    @XmlAttribute(required = true)
+    private static final long serialVersionUID = 5283563480532208692L;
+	@XmlAttribute(required = true)
     private String test;
 
     /**

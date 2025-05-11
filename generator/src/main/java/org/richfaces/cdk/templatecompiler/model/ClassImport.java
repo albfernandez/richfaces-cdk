@@ -35,7 +35,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 @XmlAccessorType(XmlAccessType.NONE)
 public class ClassImport implements Serializable {
-    @XmlAttribute(name= "package", required = true)
+    private static final long serialVersionUID = -5251454534344584239L;
+	@XmlAttribute(name= "package", required = true)
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     private String packageName;
     @XmlAttribute(name="static")

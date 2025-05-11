@@ -35,7 +35,8 @@ import org.richfaces.cdk.CdkException;
 @XmlAccessorType(XmlAccessType.NONE)
 public class CdkRenderFragmentElement implements ModelElement {
 
-    @XmlAttribute(required = true)
+    private static final long serialVersionUID = -69641290521853989L;
+	@XmlAttribute(required = true)
     private String name;
     @XmlAnyAttribute
     private Map<QName, String> attributes;

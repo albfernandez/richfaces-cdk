@@ -30,4 +30,10 @@ package org.richfaces.cdk.templatecompiler;
  *
  */
 public class AlreadyProcessedException extends RuntimeException {
+
+	private static final long serialVersionUID = -2333497270362091517L;
+	
+	public AlreadyProcessedException() {
+		super();
+	}
 }

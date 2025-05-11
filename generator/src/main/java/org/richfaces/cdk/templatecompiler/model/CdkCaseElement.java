@@ -35,7 +35,8 @@ import org.richfaces.cdk.CdkException;
 @XmlRootElement(name = "case", namespace = Template.CDK_NAMESPACE)
 @XmlAccessorType(XmlAccessType.NONE)
 public class CdkCaseElement extends ModelFragment {
-    @XmlAttribute
+    private static final long serialVersionUID = -4236141714532929140L;
+	@XmlAttribute
     private String[] values;
 
     public String[] getValues() {

@@ -43,7 +43,8 @@ import org.richfaces.cdk.CdkException;
  */
 @XmlAccessorType(XmlAccessType.NONE)
 public class AnyElement extends ModelFragment {
-    private QName name;
+    private static final long serialVersionUID = -1708382575222491938L;
+	private QName name;
     @XmlAttribute(namespace = Template.CDK_NAMESPACE)
     private String passThrough;
     @XmlAttribute(namespace = Template.CDK_NAMESPACE)

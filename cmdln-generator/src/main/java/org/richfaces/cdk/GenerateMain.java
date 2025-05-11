@@ -32,7 +32,8 @@ public class GenerateMain {
 
     public static void main(String[] args) {
         CommandLineGenerator generator = new CommandLineGenerator();
-        JCommander jCommander = new JCommander(generator, args);
+        JCommander jCommander = new JCommander(generator);
+        jCommander.parse(args);
         if (generator.isHelp()) {
             jCommander.usage();
         } else {

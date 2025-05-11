@@ -30,7 +30,9 @@ package org.richfaces.cdk.model;
  *
  */
 public class AttributeModel extends PropertyBase {
-    public AttributeModel() {
+    private static final long serialVersionUID = -6271576935837189037L;
+
+	public AttributeModel() {
         super();
     }
 

@@ -33,7 +33,8 @@ import org.richfaces.cdk.CdkException;
 @XmlRootElement(name = "object", namespace = Template.CDK_NAMESPACE)
 @XmlAccessorType(XmlAccessType.NONE)
 public class CdkObjectElement implements ModelElement {
-    @XmlAttribute(required = true)
+    private static final long serialVersionUID = -1097723368661283375L;
+	@XmlAttribute(required = true)
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     private String name;
     @XmlAttribute

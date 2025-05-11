@@ -35,7 +35,8 @@ import org.richfaces.cdk.CdkException;
 @XmlRootElement(name = "forEach", namespace = Template.JSTL_CORE_NAMESPACE)
 @XmlAccessorType(XmlAccessType.NONE)
 public class CdkForEachElement extends ModelFragment {
-    @XmlAttribute
+    private static final long serialVersionUID = -6989156233274190204L;
+	@XmlAttribute
     private String items;
     @XmlAttribute
     private String var;

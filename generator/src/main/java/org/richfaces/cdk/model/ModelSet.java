@@ -155,7 +155,8 @@ public class ModelSet<E extends ModelElement<? super E>> implements ModelCollect
         }
     }
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public boolean remove(Object o) {
         if (null != o) {
             Class<? extends Object> clazz = o.getClass();
@@ -206,7 +207,8 @@ public class ModelSet<E extends ModelElement<? super E>> implements ModelCollect
         return null == result ? accept(visitor, data) : result;
     }
 
-    public <R, D> R accept(Visitor<R, D> visitor, D data) {
+    @SuppressWarnings("rawtypes")
+	public <R, D> R accept(Visitor<R, D> visitor, D data) {
         for (ModelElement element : elements) {
             R result = element.accept(visitor, data);
             if (null != result) {
